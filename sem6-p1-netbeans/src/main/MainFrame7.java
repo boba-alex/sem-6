@@ -13,9 +13,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
-import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 import main.entities.Receipt;
 import main.entities.ReceiptCustomer;
@@ -207,6 +206,8 @@ public class MainFrame7 extends javax.swing.JFrame {
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 9;
         jPanel4.add(jLabel5, gridBagConstraints);
+
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 9;
@@ -228,9 +229,10 @@ public class MainFrame7 extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setMinimumSize(new java.awt.Dimension(500, 500));
-        jPanel1.setPreferredSize(new java.awt.Dimension(500, 500));
+        jPanel1.setPreferredSize(new java.awt.Dimension(700, 500));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setText("Add receipt");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -239,18 +241,21 @@ public class MainFrame7 extends javax.swing.JFrame {
         gridBagConstraints.ipady = 53;
         jPanel1.add(jLabel7, gridBagConstraints);
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel8.setText("Day");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 9;
         jPanel1.add(jLabel8, gridBagConstraints);
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel9.setText("Month");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 11;
         jPanel1.add(jLabel9, gridBagConstraints);
 
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel12.setText("Choose service");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -258,12 +263,14 @@ public class MainFrame7 extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 27;
         jPanel1.add(jLabel12, gridBagConstraints);
 
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel13.setText("Year");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 13;
         jPanel1.add(jLabel13, gridBagConstraints);
 
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel14.setText("Choose customer");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
@@ -297,6 +304,7 @@ public class MainFrame7 extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 50;
         jPanel1.add(jTextField6, gridBagConstraints);
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("Add");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -468,6 +476,7 @@ public class MainFrame7 extends javax.swing.JFrame {
         gridBagConstraints.gridy = 8;
         jPanel3.add(filler24, gridBagConstraints);
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton3.setText("Delete");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -515,11 +524,15 @@ public class MainFrame7 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String name = jTextField3.getText().replaceAll(" ", "");
         String surname = jTextField2.getText().replaceAll(" ", "");
-        ReceiptCustomer receiptCustomer = new ReceiptCustomer(name, surname);
-        new MyService().addReceiptCustomer(receiptCustomer);
+        if(!name.isEmpty() && surname.isEmpty()){
+            ReceiptCustomer receiptCustomer = new ReceiptCustomer(name, surname);
+            new MyService().addReceiptCustomer(receiptCustomer);
+        }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        try{
         int day = Integer.parseInt(jTextField4.getText().replaceAll(" ", ""));
         int month = Integer.parseInt(jTextField5.getText().replaceAll(" ", ""));
         int year = Integer.parseInt(jTextField6.getText().replaceAll(" ", ""));
@@ -528,6 +541,12 @@ public class MainFrame7 extends javax.swing.JFrame {
         ReceiptCustomer receiptCustomer = (ReceiptCustomer)jComboBox3.getSelectedItem();
         
         new MyService().addReceipt(new Receipt(receiptService, receiptCustomer, LocalDate.of(year, month, day)));
+        updateList1(((ArrayList<Receipt>) new MyService().getAllReceipts()));
+        
+        }
+        catch(NumberFormatException ex){
+            JOptionPane.showMessageDialog(rootPane, "please, use correct data");
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
