@@ -7,12 +7,7 @@ package main.entities;
  */
 
 
-import main.exceptions.MyException;
-import main.services.*;
-
-import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Calendar;
 
 /**
  *

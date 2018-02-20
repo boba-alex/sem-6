@@ -11,7 +11,6 @@ import main.constants.ConstantsSQL;
 import main.entities.Receipt;
 import main.entities.ReceiptCustomer;
 import main.entities.ReceiptService;
-import main.exceptions.MyException;
 import main.services.MyService;
 
 import java.sql.Connection;

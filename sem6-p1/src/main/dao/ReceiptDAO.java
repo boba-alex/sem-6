@@ -1,7 +1,6 @@
 package main.dao;
 
 import main.entities.Receipt;
-import main.entities.ReceiptCustomer;
 
 import java.util.List;
 

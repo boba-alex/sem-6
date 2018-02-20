@@ -1,13 +1,10 @@
 package main.dao;
 
 import main.constants.ConstantsSQL;
-import main.entities.Receipt;
 import main.entities.ReceiptCustomer;
-import main.entities.ReceiptService;
 
 import javax.swing.*;
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
