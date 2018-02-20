@@ -8,6 +8,7 @@ package main.entities;
 
 
 import main.exceptions.MyException;
+import main.services.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -17,47 +18,42 @@ import java.util.Calendar;
  *
  * @author User
  */
-public class Receipt implements Serializable, Comparable<Receipt>{
+public class Receipt {
     private int id;
-    private int number;
-    private String name;
-    private String receiptCustomerName;
+    private ReceiptService receiptService;
+    private ReceiptCustomer receiptCustomer;
     private LocalDate date;
 
     public Receipt(){}
     
-    public Receipt(int number, String name, String receiptCustomerName, LocalDate date) throws MyException {
-        if(name.equals("")) throw new MyException("Name is empty!");
-        if(receiptCustomerName.equals("")) throw new MyException("receiptCustomerName is empty!");
-        this.number = number;
-        this.name = name;
-        this.receiptCustomerName = receiptCustomerName;
+    public Receipt(ReceiptService receiptService, ReceiptCustomer receiptCustomer, LocalDate date){
+        this.receiptService = receiptService;
+        this.receiptCustomer=receiptCustomer;
         this.date = date;
     }
 
-
-    public int getNumber() {
-        return number;
+    public int getId() {
+        return id;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public ReceiptService getReceiptService() {
+        return receiptService;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setReceiptService(ReceiptService receiptService) {
+        this.receiptService = receiptService;
     }
 
-    public String getReceiptCustomerName() {
-        return receiptCustomerName;
+    public ReceiptCustomer getReceiptCustomer() {
+        return receiptCustomer;
     }
 
-    public void setReceiptCustomerName(String receiptCustomerName) {
-        this.receiptCustomerName = receiptCustomerName;
+    public void setReceiptCustomer(ReceiptCustomer receiptCustomer) {
+        this.receiptCustomer = receiptCustomer;
     }
 
     public LocalDate getDate() {
@@ -68,30 +64,23 @@ public class Receipt implements Serializable, Comparable<Receipt>{
         this.date = date;
     }
 
+    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer){
+        this.receiptCustomer = receiptCustomer;
+    }
+
+    public void addReceiptService(final ReceiptService receiptService){
+        this.receiptService = receiptService;
+    }
+
     @Override
     public String toString() {
         return "Receipt{" +
-                "number=" + number +
-                ", name='" + name + '\'' +
-                ", receiptCustomerName='" + receiptCustomerName + '\'' +
+                "id=" + id +
+                ", receiptService=" + receiptService +
+                ", receiptCustomer=" + receiptCustomer +
                 ", date=" + date +
                 '}';
     }
 
-
-    @Override
-    public int compareTo(Receipt o) {
-        if(this.getDate().getYear() != o.getDate().getYear())
-            return Integer.compare(this.getDate().getYear(), o.getDate().getYear());
-        if(this.getDate().getMonth() != o.getDate().getMonth())
-            return Integer.compare(this.getDate().getMonthValue(), o.getDate().getMonthValue());
-        if(this.getDate().getDayOfMonth() != o.getDate().getDayOfMonth())
-            return Integer.compare(this.getDate().getDayOfMonth(), o.getDate().getDayOfMonth());
-        if(this.getNumber() != o.getNumber())
-            return Integer.compare(this.getNumber(), o.getNumber());
-        if(this.getReceiptCustomerName().compareTo(o.getReceiptCustomerName()) != 0)
-            return this.getReceiptCustomerName().compareTo(o.getReceiptCustomerName());
-        return this.getName().compareTo(o.getName());
-    }
 }
 

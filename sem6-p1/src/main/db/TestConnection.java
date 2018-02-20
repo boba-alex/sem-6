@@ -8,12 +8,18 @@ package main.db;
 
 
 import main.constants.ConstantsSQL;
+import main.entities.Receipt;
+import main.entities.ReceiptCustomer;
+import main.entities.ReceiptService;
+import main.exceptions.MyException;
+import main.services.MyService;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.LocalDate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -36,6 +42,11 @@ public class TestConnection {
                 System.out.println(rs.getString(1) + rs.getString(2) +
                         rs.getString(3) + rs.getString(4) + rs.getString(5));
             }
+            Receipt receipt = new Receipt(new ReceiptService("eee"), new ReceiptCustomer("a", "b"), LocalDate.now());
+
+            receipt.setId(4);
+            System.out.println(receipt);
+            new MyService().deleteReceipt(receipt);
             stmt.close();
             conn.close();
         } catch (ClassNotFoundException ex) {

@@ -1,6 +1,7 @@
 package main.dao;
 
 import main.entities.Receipt;
+import main.entities.ReceiptCustomer;
 
 import java.util.List;
 
@@ -10,7 +11,6 @@ import java.util.List;
  */
 public interface ReceiptDAO {
     void addReceipt(final Receipt receipt);
-    List<Receipt> getReceipts();
-    List<Receipt> getReceiptsInTime(String sqlex);
+    List<Receipt> getReceipts(String sqlex);
     void deleteReceipt(Receipt receipt);
 }

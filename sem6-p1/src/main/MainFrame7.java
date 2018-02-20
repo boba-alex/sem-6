@@ -10,7 +10,7 @@ package main;
 
 import main.exceptions.MyException;
 import main.entities.Receipt;
-import main.services.ReceiptService;
+import main.services.MyService;
 
 import java.awt.Dimension;
 import java.awt.Menu;
@@ -21,7 +21,6 @@ import java.awt.event.ActionListener;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import javax.swing.DefaultListModel;
@@ -453,13 +452,13 @@ public class MainFrame7 extends javax.swing.JFrame {
             clearFormAfterUpdateList1();
         }
         if (jComboBox1.getSelectedIndex() == 1) {
-            updateList2((ArrayList<Receipt>) new ReceiptService().getReceiptsInCurrentDay());
+            updateList2((ArrayList<Receipt>) new MyService().getReceiptsInCurrentDay());
         }
         if (jComboBox1.getSelectedIndex() == 2) {
-            updateList2((ArrayList<Receipt>) new ReceiptService().getReceiptsInCurrentMonth());
+            updateList2((ArrayList<Receipt>) new MyService().getReceiptsInCurrentMonth());
         }
         if (jComboBox1.getSelectedIndex() == 3) {
-            updateList2((ArrayList<Receipt>) new ReceiptService().getReceiptsInCurrentQuarter());
+            updateList2((ArrayList<Receipt>) new MyService().getReceiptsInCurrentQuarter());
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
@@ -469,15 +468,13 @@ public class MainFrame7 extends javax.swing.JFrame {
             int day = Integer.parseInt(jTextField4.getText());
             int month = Integer.parseInt(jTextField5.getText());
             int year = Integer.parseInt(jTextField6.getText());
-            Receipt receipt = new Receipt(new Random().nextInt(), name, "receiptCustomerName", LocalDate.of(year, month, day));
+            Receipt receipt = new Receipt();//new Random().nextInt(), name, "receiptCustomerName", LocalDate.of(year, month, day));
             arrayOfReceipts.add(receipt);
-            new ReceiptService().addReceipt(receipt);
-            arrayOfReceipts = new ReceiptService().getReceipts();
-            updateList1((ArrayList<Receipt>) new ReceiptService().getReceipts());
+            new MyService().addReceipt(receipt);
+            arrayOfReceipts = new MyService().getAllReceipts();
+            updateList1((ArrayList<Receipt>) new MyService().getAllReceipts());
             clearFormAfterUpdateList1();
-        } catch (MyException ex) {
-            JOptionPane.showMessageDialog(rootPane, ex.getMessage());
-        } catch (NumberFormatException ex) {
+        }  catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(rootPane, ex.getMessage());
         }
         catch(DateTimeException exception){
@@ -502,7 +499,7 @@ public class MainFrame7 extends javax.swing.JFrame {
         loadItems.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                updateList1((ArrayList<Receipt>) new ReceiptService().getReceipts());
+                updateList1((ArrayList<Receipt>) new MyService().getAllReceipts());
                 clearFormAfterUpdateList1();
             }
         });
@@ -527,21 +524,21 @@ public class MainFrame7 extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jComboBox1.setSelectedIndex(1);
-                updateList2((ArrayList<Receipt>) new ReceiptService().getReceiptsInCurrentDay());
+                updateList2((ArrayList<Receipt>) new MyService().getReceiptsInCurrentDay());
             }
         });
         currentMonthAnalyzeItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jComboBox1.setSelectedIndex(2);
-                updateList2((ArrayList<Receipt>) new ReceiptService().getReceiptsInCurrentMonth());
+                updateList2((ArrayList<Receipt>) new MyService().getReceiptsInCurrentMonth());
             }
         });
         CurrentQuarterAnalyzeItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jComboBox1.setSelectedIndex(3);
-                updateList2((ArrayList<Receipt>) new ReceiptService().getReceiptsInCurrentQuarter());
+                updateList2((ArrayList<Receipt>) new MyService().getReceiptsInCurrentQuarter());
             }
         });
         return menuAnalyze;
