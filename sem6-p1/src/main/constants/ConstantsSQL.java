@@ -10,7 +10,7 @@ public class ConstantsSQL {
     public static final String SQL_QUERY_GET_RECEIPTS = "SELECT r.id, r.receipt_service_id, r.date_of_receipt_service , r.receipt_customer_id, " +
             "rc.name AS receipt_customer_name, rc.surname AS receipt_customer_surname, rs.name AS receipt_service_name " +
             "FROM receipt r INNER JOIN receipt_customer rc on r.receipt_customer_id=rc.id " +
-            "INNER JOIN receipt_service rs on r.receipt_service_id=rs.id";
+            "INNER JOIN receipt_service rs on r.receipt_service_id=rs.id ";
     public static final String SQL_QUERY_GET_RECEIPTS_IN_CURRENT_DAY = SQL_QUERY_GET_RECEIPTS + "where date_of_receipt_service = curdate()";
     public static final String SQL_QUERY_GET_RECEIPTS_IN_CURRENT_MONTH = SQL_QUERY_GET_RECEIPTS +"where date_of_receipt_service > LAST_DAY(DATE_SUB(CURDATE(), INTERVAL 1 MONTH)) " +
             "AND date_of_receipt_service < DATE_ADD(LAST_DAY(CURDATE()), INTERVAL 1 DAY)";
