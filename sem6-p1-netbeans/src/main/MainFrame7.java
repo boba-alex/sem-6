@@ -524,7 +524,7 @@ public class MainFrame7 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String name = jTextField3.getText().replaceAll(" ", "");
         String surname = jTextField2.getText().replaceAll(" ", "");
-        if(!name.isEmpty() && surname.isEmpty()){
+        if(!name.isEmpty() && !surname.isEmpty()){
             ReceiptCustomer receiptCustomer = new ReceiptCustomer(name, surname);
             new MyService().addReceiptCustomer(receiptCustomer);
         }
