@@ -1,3 +1,11 @@
-/sem6-p1-netb/build/
-/sem6-p1-n/build/
 /sem6-p1-netbeans/dist/
+/sem6-p1-netbeans/build/
+/sem6-p1-netbeans/nbbuild/
+/sem6-p1-netbeans/nbproject/private/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
