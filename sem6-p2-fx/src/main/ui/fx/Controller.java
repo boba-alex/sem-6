@@ -58,7 +58,7 @@ public class Controller {
 
     @FXML
     private void deleteChosenReceipt() {
-        try{
+        try {
             String selection = list1.getFocusModel().getFocusedItem().toString();
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Delete " + selection + " ?", ButtonType.YES, ButtonType.NO, ButtonType.CANCEL);
             alert.showAndWait();
@@ -68,8 +68,7 @@ public class Controller {
                 myService.deleteReceipt(chosenReceipt);
                 updateList1((ArrayList<Receipt>) myService.getAllReceipts());
             }
-        }
-        catch(Exception ex){
+        } catch (Exception ex) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Please, u should load smth", ButtonType.YES);
             alert.showAndWait();
         }
@@ -77,7 +76,7 @@ public class Controller {
     }
 
     @FXML
-    private void addCustomer(){
+    private void addCustomer() {
         Dialog dialog = new Dialog();
         dialog.setTitle("Add customer");
         dialog.setHeaderText("This is a custom dialog. Enter info and \n" +
@@ -99,12 +98,10 @@ public class Controller {
         if (dialog.getResult() == buttonTypeOk) {
             String name = text1.getText().replaceAll(" ", "");
             String surname = text2.getText().replaceAll(" ", "");
-            if(!name.isEmpty() && !surname.isEmpty()){
+            if (!name.isEmpty() && !surname.isEmpty()) {
                 ReceiptCustomer receiptCustomer = new ReceiptCustomer(name, surname);
                 new MyService().addReceiptCustomer(receiptCustomer);
-            }
-            else
-            {
+            } else {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Empty field", ButtonType.YES);
                 alert.showAndWait();
             }
@@ -113,7 +110,7 @@ public class Controller {
     }
 
     @FXML
-    private void addReceipt(){
+    private void addReceipt() {
         Dialog dialog = new Dialog();
         dialog.setTitle("Add receipt");
         dialog.setHeaderText("This is a custom dialog. Enter info and \n" +
@@ -150,53 +147,35 @@ public class Controller {
         dialog.getDialogPane().getButtonTypes().add(buttonTypeOk);
         dialog.showAndWait();
         if (dialog.getResult() == buttonTypeOk) {
-            try{
+            try {
                 int day = Integer.parseInt(text1.getText().replaceAll(" ", ""));
                 int month = Integer.parseInt(text2.getText().replaceAll(" ", ""));
                 int year = Integer.parseInt(text3.getText().replaceAll(" ", ""));
 
-                ReceiptService receiptService = (ReceiptService)comboBox1.getSelectionModel().getSelectedItem();
-                ReceiptCustomer receiptCustomer = (ReceiptCustomer)comboBox2.getSelectionModel().getSelectedItem();
+                ReceiptService receiptService = comboBox1.getSelectionModel().getSelectedItem();
+                ReceiptCustomer receiptCustomer = comboBox2.getSelectionModel().getSelectedItem();
 
-                if(receiptService != null && receiptCustomer != null) {
+                if (receiptService != null && receiptCustomer != null) {
                     new MyService().addReceipt(new Receipt(receiptService, receiptCustomer, LocalDate.of(year, month, day)));
                     updateList1(((ArrayList<Receipt>) new MyService().getAllReceipts()));
-                }
-                else throw new NumberFormatException();
+                } else throw new NumberFormatException();
 
-            }
-            catch(NumberFormatException ex) {
+            } catch (NumberFormatException ex) {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Please, u should input correct data", ButtonType.YES);
                 alert.showAndWait();
             }
         }
     }
+
     private void updateList1(ArrayList<Receipt> receipts) {
         list1.setItems(FXCollections.observableArrayList(receipts));
     }
 
     private void clearFormAfterUpdateList1() {
         list2.getItems().clear();
-        //jComboBox1.setSelectedIndex(0);
     }
 
     private void updateList2(ArrayList<Receipt> receipts) {
         list2.setItems(FXCollections.observableArrayList(receipts));
     }
-
-//    private void fillComboBoxCustomer(){
-//        ArrayList<ReceiptCustomer> receiptCustomers = (ArrayList<ReceiptCustomer>)new MyService().getReceiptCurstomers();
-//        for(ReceiptCustomer receiptCustomer : receiptCustomers){
-//            jComboBox3.addItem(receiptCustomer);
-//        }
-//    }
-
-
-//    private void fillComboBoxService(){
-//        ArrayList<ReceiptService> receiptServices = (ArrayList<ReceiptService>)new MyService().getReceiptServices();
-//        for(ReceiptService receiptService : receiptServices){
-//            jComboBox2.addItem(receiptService);
-//        }
-//    }
-
 }
