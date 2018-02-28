@@ -33,6 +33,7 @@ public class RemoteServer {
 
         try {
             stub = UnicastRemoteObject.exportObject(myService, 0);
+           // stub = UnicastRemoteObject.exportObject(myService, 4396);
         } catch (RemoteException e) {
             e.printStackTrace();
         }

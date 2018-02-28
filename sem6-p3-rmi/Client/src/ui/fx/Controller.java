@@ -220,7 +220,7 @@ public class Controller implements Initializable {
          */
         Registry registry = null;
         try {
-            // registry = LocateRegistry.getRegistry("192.168.43.34", 4396);
+             //registry = LocateRegistry.getRegistry("192.168.43.34", 4396);
             registry = LocateRegistry.getRegistry("localhost", 4396);
         } catch (RemoteException e) {
             System.err.println(e.getMessage());
