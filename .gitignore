@@ -4,8 +4,8 @@
 /sem6-p1-netbeans/nbproject/private/
 
 ### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+sem6-p2-fx/.idea
+sem6-p2-fx/*.iws
+sem6-p2-fx/*.iml
+sem6-p2-fx/*.ipr
 
