@@ -11,7 +11,7 @@ sem6-p2-fx/*.ipr
 
 sem6-p3-rmi/.idea/
 sem6-p3-rmi/out/
-/sem6-p3-rmi/.idea/workspace.xml
+sem6-p3-rmi/.idea/workspace.xml
 sem6-p3-rmi/*.iws
 sem6-p3-rmi/*.iml
 sem6-p3-rmi/*.ipr

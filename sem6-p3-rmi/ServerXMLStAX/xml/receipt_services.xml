@@ -2,7 +2,7 @@
 
 <ReceiptServices xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
                  xmlns="http://boba-alex.com/ReceiptServices"
-        xsi:noNamespaceSchemaLocation="receipt_services.xsd">
+                 xsi:noNamespaceSchemaLocation="receipt_services.xsd">
     <ReceiptService id="1">
         <servicename>REPAIR PRODUCTS</servicename>
     </ReceiptService>

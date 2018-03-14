@@ -7,8 +7,9 @@ package entities;
  */
 
 
-import javax.xml.bind.annotation.XmlAnyAttribute;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -17,6 +18,7 @@ import java.time.LocalDate;
  *
  * @author User
  */
+
 @XmlRootElement
 public class Receipt implements Serializable{
     private int id;
@@ -36,7 +38,7 @@ public class Receipt implements Serializable{
         return id;
     }
 
-    @XmlAnyAttribute
+    @XmlAttribute
     public void setId(int id) {
         this.id = id;
     }
