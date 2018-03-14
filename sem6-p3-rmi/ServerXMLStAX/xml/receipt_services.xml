@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ReceiptServices xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+                 xmlns="http://boba-alex.com/ReceiptServices"
+        xsi:noNamespaceSchemaLocation="receipt_services.xsd">
+    <ReceiptService id="1">
+        <servicename>REPAIR PRODUCTS</servicename>
+    </ReceiptService>
+    <ReceiptService id="2">
+        <servicename>ARTISTIC DARNING</servicename>
+    </ReceiptService>
+    <ReceiptService id="3">
+        <servicename>FITTING PRODUCTS ON THE FIGURE</servicename>
+    </ReceiptService>
+    <ReceiptService id="4">
+        <servicename>KNITTING</servicename>
+    </ReceiptService>
+    <ReceiptService id="5">
+        <servicename>SEWING PRODUCTS</servicename>
+    </ReceiptService>
+    <ReceiptService id="6">
+        <servicename>THE DESIGN AND TAILORING OF CURTAINS</servicename>
+    </ReceiptService>
+    <ReceiptService id="7">
+        <servicename>REPAIR DRESSES </servicename>
+    </ReceiptService>
+</ReceiptServices>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?><ReceiptCustomers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://boba-alex.com/ReceiptCustomers" xsi:noNamespaceSchemaLocation="receipt_customers.xsd">
+    <ReceiptCustomer id="1">
+        <name>Ivan</name>
+        <surname>Bolny</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="2">
+        <name>Alesrha</name>
+        <surname>Popovich</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="3">
+        <name>Aledsha</name>
+        <surname>Popovich</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="4">
+        <name>Alescha</name>
+        <surname>Popovxvich</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="5">
+        <name>Alesha</name>
+        <surname>Popsovich</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="6">
+        <name>Alefdsha</name>
+        <surname>Posdpovich</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="7">
+        <name>Aletsha</name>
+        <surname>Popovfgdich</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="8">
+        <name>Alessdha</name>
+        <surname>Popovich</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="9">
+        <name>Alesha</name>
+        <surname>Popsdfovich</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="10">
+        <name>Alessddha</name>
+        <surname>Pop213ovich</surname>
+    </ReceiptCustomer>
+	<ReceiptCustomer id="11">
+		<name>Sasha</name>
+		<surname>Lalala</surname>
+	</ReceiptCustomer>
+	<ReceiptCustomer id="12">
+		<name>Vova</name>
+		<surname>HAHA</surname>
+	</ReceiptCustomer>
+	<ReceiptCustomer id="13">
+		<name>Badim</name>
+		<surname>Urievich</surname>
+	</ReceiptCustomer>
+</ReceiptCustomers>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?><r:Receipts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:r="http://boba-alex.com/Receipts" xmlns:rc="http://boba-alex.com/ReceiptCustomers" xmlns:rs="http://boba-alex.com/ReceiptServices" xsi:schemaLocation="http://boba-alex.com/Receipts">
+    <r:Receipt id="1">
+        <r:ReceiptService id="1">
+            <rs:servicename>REPAIR PRODUCTS</rs:servicename>
+        </r:ReceiptService>
+        <r:ReceiptCustomer id="1">
+            <rc:name>Ivan</rc:name>
+            <rc:surname>Bolny</rc:surname>
+        </r:ReceiptCustomer>
+        <r:DateOfReceiptService>2018-02-15</r:DateOfReceiptService>
+	</r:Receipt>
+	<r:Receipt id="2">
+		<r:ReceiptService id="2">
+			<rs:servicename>ARARSFDS</rs:servicename>
+		</r:ReceiptService>
+		<r:ReceiptCustomer id="2">
+			<rc:name>Alesha</rc:name>
+			<rc:surname>Popovich</rc:surname>
+		</r:ReceiptCustomer>
+		<r:DateOfReceiptService>2018-03-14</r:DateOfReceiptService>
+	</r:Receipt>
+	<r:Receipt id="3">
+		<r:ReceiptService id="7">
+			<rs:servicename>REPAIR DRESSES </rs:servicename>
+		</r:ReceiptService>
+		<r:ReceiptCustomer id="11">
+			<rc:name>Sasha</rc:name>
+			<rc:surname>Lalala</rc:surname>
+		</r:ReceiptCustomer>
+		<r:DateOfReceiptService>2018-03-14</r:DateOfReceiptService>
+	</r:Receipt>
+	<r:Receipt id="4">
+		<r:ReceiptService id="4">
+			<rs:servicename>KNITTING</rs:servicename>
+		</r:ReceiptService>
+		<r:ReceiptCustomer id="13">
+			<rc:name>Badim</rc:name>
+			<rc:surname>Urievich</rc:surname>
+		</r:ReceiptCustomer>
+		<r:DateOfReceiptService>2017-12-31</r:DateOfReceiptService>
+	</r:Receipt>
+</r:Receipts>

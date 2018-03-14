@@ -1,16 +1,16 @@
-/sem6-p1-netbeans/dist/
-/sem6-p1-netbeans/build/
-/sem6-p1-netbeans/nbbuild/
-/sem6-p1-netbeans/nbproject/private/
+sem6-p1-netbeans/dist/
+sem6-p1-netbeans/build/
+sem6-p1-netbeans/nbbuild/
+sem6-p1-netbeans/nbproject/private/
 
 ### IntelliJ IDEA ###
-/sem6-p2-fx/.idea
-/sem6-p2-fx/*.iws
-/sem6-p2-fx/*.iml
-/sem6-p2-fx/*.ipr
+sem6-p2-fx/.idea
+sem6-p2-fx/*.iws
+sem6-p2-fx/*.iml
+sem6-p2-fx/*.ipr
 
-/sem6-p3-rmi/.idea
-/sem6-p3-rmi/*.iws
-/sem6-p3-rmi/*.iml
-/sem6-p3-rmi/*.ipr
+sem6-p3-rmi/.idea
+sem6-p3-rmi/*.iws
+sem6-p3-rmi/*.iml
+sem6-p3-rmi/*.ipr
 
