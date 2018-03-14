@@ -1,4 +1,7 @@
-<?xml version="1.0"?><r:Receipts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:r="http://boba-alex.com/Receipts" xmlns:rc="http://boba-alex.com/ReceiptCustomers" xmlns:rs="http://boba-alex.com/ReceiptServices" xsi:schemaLocation="http://boba-alex.com/Receipts">
+<?xml version="1.0"?>
+<r:Receipts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:r="http://boba-alex.com/Receipts"
+            xmlns:rc="http://boba-alex.com/ReceiptCustomers" xmlns:rs="http://boba-alex.com/ReceiptServices"
+            xsi:schemaLocation="http://boba-alex.com/Receipts">
     <r:Receipt id="1">
         <r:ReceiptService id="1">
             <rs:servicename>REPAIR PRODUCTS</rs:servicename>
@@ -49,14 +52,4 @@
         </r:ReceiptCustomer>
         <r:DateOfReceiptService>2018-03-14</r:DateOfReceiptService>
     </r:Receipt>
-	<r:Receipt id="6">
-		<r:ReceiptService id="7">
-			<rs:servicename>REPAIR DRESSES </rs:servicename>
-		</r:ReceiptService>
-		<r:ReceiptCustomer id="15">
-			<rc:name>Anton</rc:name>
-			<rc:surname>Shtabnoy</rc:surname>
-		</r:ReceiptCustomer>
-		<r:DateOfReceiptService>2018-03-14</r:DateOfReceiptService>
-	</r:Receipt>
 </r:Receipts>

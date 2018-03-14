@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Client/Client.iml" filepath="$PROJECT_DIR$/Client/Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServerSQL/ServerSQL.iml" filepath="$PROJECT_DIR$/ServerSQL/ServerSQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServerXMLJAXB/ServerXMLJAXB.iml" filepath="$PROJECT_DIR$/ServerXMLJAXB/ServerXMLJAXB.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServerXMLStAX/ServerXMLStAX.iml" filepath="$PROJECT_DIR$/ServerXMLStAX/ServerXMLStAX.iml" />
       <module fileurl="file://$PROJECT_DIR$/sem6-p3-rmi.iml" filepath="$PROJECT_DIR$/sem6-p3-rmi.iml" />
     </modules>

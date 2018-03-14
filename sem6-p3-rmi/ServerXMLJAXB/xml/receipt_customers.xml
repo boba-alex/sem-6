@@ -55,8 +55,4 @@
 		<name>Dimas</name>
 		<surname>Romanovets</surname>
 	</ReceiptCustomer>
-	<ReceiptCustomer id="15">
-		<name>Anton</name>
-		<surname>Shtabnoy</surname>
-	</ReceiptCustomer>
 </ReceiptCustomers>
