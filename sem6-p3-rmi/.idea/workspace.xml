@@ -44,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receipts.xsd" pinned="false" current-in-tab="true">
+      <file leaf-file-name="receipts.xsd" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xsd">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
@@ -74,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -87,8 +87,8 @@
       <file leaf-file-name="RemoteServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerSQL/src/server/RemoteServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="336">
+              <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -256,6 +256,24 @@
               <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="fx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sem6-p3-rmi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sem6-p3-rmi" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerSQL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sem6-p3-rmi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sem6-p3-rmi" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sem6-p3-rmi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sem6-p3-rmi" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -782,8 +800,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RemoteServer (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.RemoteServer" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RemoteServer" />
+        <item index="2" class="java.lang.String" itemvalue="Application.RemoteServer (1)" />
         <item index="3" class="java.lang.String" itemvalue="Application.ReceiptDAOImpl" />
         <item index="4" class="java.lang.String" itemvalue="Application.ReceiptCustomerDAOImpl" />
       </list>
@@ -804,12 +822,12 @@
       <workItem from="1520865161646" duration="185000" />
       <workItem from="1520957654620" duration="15820000" />
       <workItem from="1521012839492" duration="17244000" />
-      <workItem from="1521033636863" duration="6233000" />
+      <workItem from="1521033636863" duration="6885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46135000" />
+    <option name="totallyTimeSpent" value="46787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1163,26 +1181,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="229" column="58" lean-forward="false" selection-start-line="229" selection-start-column="58" selection-end-line="229" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServerSQL/src/server/RemoteServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1215,6 +1217,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerSQL/src/server/RemoteServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
