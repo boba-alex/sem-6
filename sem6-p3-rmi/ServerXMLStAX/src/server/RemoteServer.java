@@ -1,5 +1,6 @@
 package server;
 
+import org.xml.sax.SAXParseException;
 import services.MyRemoteService;
 import services.MyXMLStAXService;
 
@@ -17,7 +18,7 @@ public class RemoteServer {
 
     private static final String BINDING_NAME = "local/MyService";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws RemoteException{
         Registry registry = null;
 
         try {
@@ -27,7 +28,14 @@ public class RemoteServer {
             e.printStackTrace();
         }
 
-        MyRemoteService myService = new MyXMLStAXService();
+        MyRemoteService myService = null;
+        try{
+             myService = new MyXMLStAXService();
+        }
+        catch(RuntimeException exception){
+            System.out.println("SAX EXCEPTION!");
+        }
+
 
         Remote stub = null;
 

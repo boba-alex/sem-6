@@ -3,6 +3,7 @@ package dao;
 import constants.ConstantsXML;
 import entities.ReceiptService;
 import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.*;

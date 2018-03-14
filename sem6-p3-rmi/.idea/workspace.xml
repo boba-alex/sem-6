@@ -2,32 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eed5c77b-211e-4d9c-babc-8e20c09a6f79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/ServerXMLStAX.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/constants/ConstantsXML.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/entities/Receipt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/entities/ReceiptCustomer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/entities/ReceiptService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/exceptions/MyException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/services/MyRemoteService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_customers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_customers.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_services.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_services.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/server/RemoteServer.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/server/RemoteServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptCustomerDAOImpl.class" afterPath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptCustomerDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptDAOImpl.class" afterPath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptServiceDAOImpl.class" afterPath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptServiceDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/server/RemoteServer.class" afterPath="$PROJECT_DIR$/out/production/ServerXMLStAX/server/RemoteServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/services/MyXMLStAXService.class" afterPath="$PROJECT_DIR$/out/production/ServerXMLStAX/services/MyXMLStAXService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAOImpl.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +25,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ReceiptCustomerDAOImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReceiptCustomerDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3234">
-              <caret line="184" column="16" lean-forward="true" selection-start-line="184" selection-start-column="16" selection-end-line="184" selection-end-column="16" />
+            <state relative-caret-position="378">
+              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,11 +37,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MyRemoteService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/services/MyRemoteService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyXMLStAXService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ReceiptServiceDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+            <state relative-caret-position="210">
+              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -65,48 +70,28 @@
       <file leaf-file-name="ReceiptDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="105">
+              <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receipt_customers.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipt_customers.xml">
+      <file leaf-file-name="receipts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+            <state relative-caret-position="147">
+              <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receipts.xsd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xsd">
+      <file leaf-file-name="RemoteServer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="receipt_customers.xsd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipt_customers.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="receipt_services.xsd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipt_services.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="398">
+              <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -122,21 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receipt_services.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipt_services.xml">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="receipts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="147">
+              <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -187,22 +162,22 @@
         <option value="$PROJECT_DIR$/ServerSQL/src/entities/ReceiptService.java" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/src/src/constants/ConstantsSQL.java" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/src/src/server/RemoteServer.java" />
-        <option value="$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAO.java" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipt.xsd" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_service.xsd" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/src/constants/ConstantsXML.java" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAO.java" />
-        <option value="$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_services.xml" />
-        <option value="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_customers.xsd" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xsd" />
-        <option value="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_services.xsd" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipt_customers.xml" />
-        <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xml" />
         <option value="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAOImpl.java" />
+        <option value="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java" />
+        <option value="$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java" />
+        <option value="$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java" />
+        <option value="$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xml" />
       </list>
     </option>
   </component>
@@ -307,6 +282,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -327,6 +306,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sem6-p3-rmi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sem6-p3-rmi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerXMLStAX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exceptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sem6-p3-rmi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sem6-p3-rmi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerXMLStAX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,7 +489,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReceiptServiceDAOImpl">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -989,15 +1008,15 @@
       <workItem from="1519813482031" duration="3216000" />
       <workItem from="1520865161646" duration="185000" />
       <workItem from="1520957654620" duration="15820000" />
-      <workItem from="1521012839492" duration="16195000" />
+      <workItem from="1521012839492" duration="17244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38853000" />
+    <option name="totallyTimeSpent" value="39902000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1046,14 +1065,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/src/constants/ConstantsSQL.java" />
-    <entry file="file://$PROJECT_DIR$/ServerSQL/ServerSQL.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/src/dao/ReceiptCustomerDAO.java" />
     <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/src/entities/ReceiptService.java" />
     <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/src/entities/ReceiptCustomer.java" />
@@ -1244,8 +1255,8 @@
         <state relative-caret-position="220">
           <caret line="749" column="15" lean-forward="false" selection-start-line="749" selection-start-column="15" selection-end-line="749" selection-end-column="15" />
           <folding>
-            <element signature="e#31780#31781#0" expanded="true" />
-            <element signature="e#31808#31809#0" expanded="true" />
+            <element signature="e#31780#31781#0" expanded="false" />
+            <element signature="e#31808#31809#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1309,22 +1320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/services/MyRemoteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="60" column="51" lean-forward="true" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1345,30 +1340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="29" column="51" lean-forward="false" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1413,29 +1384,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/services/MyRemoteService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+        <state relative-caret-position="315">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/org/xml/sax/SAXParseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="105">
+          <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3234">
-          <caret line="184" column="16" lean-forward="true" selection-start-line="184" selection-start-column="16" selection-end-line="184" selection-end-column="16" />
+        <state relative-caret-position="378">
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/xml/receipts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

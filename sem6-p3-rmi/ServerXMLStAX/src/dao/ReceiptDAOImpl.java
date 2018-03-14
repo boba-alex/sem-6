@@ -12,6 +12,7 @@ import entities.Receipt;
 import entities.ReceiptCustomer;
 import entities.ReceiptService;
 import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
 
 import javax.swing.*;
 import javax.xml.namespace.QName;

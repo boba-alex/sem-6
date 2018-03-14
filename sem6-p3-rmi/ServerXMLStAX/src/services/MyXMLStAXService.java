@@ -4,6 +4,7 @@ import dao.*;
 import entities.Receipt;
 import entities.ReceiptCustomer;
 import entities.ReceiptService;
+import org.xml.sax.SAXParseException;
 
 import java.rmi.RemoteException;
 import java.util.List;
