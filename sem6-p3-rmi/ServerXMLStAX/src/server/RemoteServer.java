@@ -1,6 +1,5 @@
 package server;
 
-import org.xml.sax.SAXParseException;
 import services.MyRemoteService;
 import services.MyXMLStAXService;
 

@@ -36,7 +36,7 @@ public class Controller implements Initializable {
         try {
             updateList1((ArrayList<Receipt>) myService.getAllReceipts());
             clearFormAfterUpdateList1();
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -50,7 +50,7 @@ public class Controller implements Initializable {
     private void loadReceiptsInCurrentDay() {
         try {
             updateList2((ArrayList<Receipt>) myService.getReceiptsInCurrentDay());
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -59,7 +59,7 @@ public class Controller implements Initializable {
     private void loadReceiptsInCurrentMonth() {
         try {
             updateList2((ArrayList<Receipt>) myService.getReceiptsInCurrentMonth());
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -68,7 +68,7 @@ public class Controller implements Initializable {
     private void loadReceiptsInCurrentQuarter() {
         try {
             updateList2((ArrayList<Receipt>) myService.getReceiptsInCurrentQuarter());
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -119,7 +119,7 @@ public class Controller implements Initializable {
                 ReceiptCustomer receiptCustomer = new ReceiptCustomer(name, surname);
                 try {
                     myService.addReceiptCustomer(receiptCustomer);
-                } catch (RemoteException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             } else {
@@ -149,7 +149,7 @@ public class Controller implements Initializable {
                 null;
         try {
             receiptServices = FXCollections.observableArrayList(myService.getReceiptServices());
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         ComboBox<ReceiptService> comboBox1 = new ComboBox(receiptServices);
@@ -157,7 +157,7 @@ public class Controller implements Initializable {
                 null;
         try {
             receiptCustomers = FXCollections.observableArrayList(myService.getReceiptCurstomers());
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         ComboBox<ReceiptCustomer> comboBox2 = new ComboBox(receiptCustomers);
@@ -194,7 +194,7 @@ public class Controller implements Initializable {
             } catch (NumberFormatException ex) {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Please, u should input correct data", ButtonType.YES);
                 alert.showAndWait();
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

@@ -3,6 +3,7 @@ package dao;
 import constants.ConstantsXML;
 import entities.ReceiptService;
 import entities.WrapperReceiptServices;
+import exceptions.MyDAOException;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -27,7 +28,7 @@ public class ReceiptServiceDAOImpl implements ReceiptServiceDAO {
 
     private JAXBContext context;
 
-    public ReceiptServiceDAOImpl() {
+    public ReceiptServiceDAOImpl() throws MyDAOException {
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             File schemaFile = new File(schemaLocation);
@@ -39,25 +40,21 @@ public class ReceiptServiceDAOImpl implements ReceiptServiceDAO {
             System.out.println("ReceiptServiceDAOImpl Created");
         } catch (SAXException | IOException | JAXBException e) {
             System.out.println("XML file is not valid.");
-            throw new RuntimeException(e);
+            throw new MyDAOException(e.getMessage());
         }
     }
 
     @Override
-    public List<ReceiptService> getReceiptServices() {
+    public List<ReceiptService> getReceiptServices() throws MyDAOException {
         WrapperReceiptServices wrapperReceiptServices = new WrapperReceiptServices();
         try {
             File file = new File(xmlLocation);
             Unmarshaller unmarshaller = context.createUnmarshaller();
             wrapperReceiptServices = (WrapperReceiptServices) unmarshaller.unmarshal(file);
         } catch (JAXBException e) {
-            e.printStackTrace();
+            throw new MyDAOException(e.getMessage());
         }
         return wrapperReceiptServices.getReceiptServices();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new ReceiptServiceDAOImpl().getReceiptServices());
     }
 
 }

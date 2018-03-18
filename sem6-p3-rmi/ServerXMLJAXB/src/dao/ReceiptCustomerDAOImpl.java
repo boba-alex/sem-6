@@ -3,6 +3,7 @@ package dao;
 import constants.ConstantsXML;
 import entities.ReceiptCustomer;
 import entities.WrapperReceiptCustomers;
+import exceptions.MyDAOException;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -30,7 +31,7 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
 
     private JAXBContext context;
 
-    public ReceiptCustomerDAOImpl() {
+    public ReceiptCustomerDAOImpl() throws MyDAOException {
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             File schemaFile = new File(schemaLocation);
@@ -42,25 +43,25 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
             System.out.println("ReceiptCustomerDAOImpl Created");
         } catch (SAXException | IOException | JAXBException e) {
             System.out.println("XML file is not valid.");
-            throw new RuntimeException(e);
+            throw new MyDAOException(e.getMessage());
         }
     }
 
     @Override
-    public List<ReceiptCustomer> getReceiptCustomers() {
-        WrapperReceiptCustomers wrapperReceiptCustomers = new WrapperReceiptCustomers();
+    public List<ReceiptCustomer> getReceiptCustomers() throws MyDAOException {
+        WrapperReceiptCustomers wrapperReceiptCustomers;
         try {
             File file = new File(xmlLocation);
             Unmarshaller unmarshaller = context.createUnmarshaller();
             wrapperReceiptCustomers = (WrapperReceiptCustomers) unmarshaller.unmarshal(file);
         } catch (JAXBException e) {
-            e.printStackTrace();
+            throw new MyDAOException(e.getMessage());
         }
         return wrapperReceiptCustomers.getReceiptCustomers();
     }
 
     @Override
-    public void addReceiptCustomer(ReceiptCustomer receiptCustomer) {
+    public void addReceiptCustomer(ReceiptCustomer receiptCustomer) throws MyDAOException {
         try {
             File file = new File(xmlLocation);
             ArrayList<ReceiptCustomer> receiptCustomers = (ArrayList<ReceiptCustomer>) getReceiptCustomers();
@@ -74,7 +75,7 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.marshal(wrapperReceiptCustomers, file);
         } catch (JAXBException e) {
-            e.printStackTrace();
+            throw new MyDAOException(e.getMessage());
         }
     }
 
@@ -89,6 +90,5 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
         }
         return maxElementNumber;
     }
-
 
 }

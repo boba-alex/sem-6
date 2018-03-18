@@ -10,6 +10,7 @@ package dao;
 import constants.ConstantsXML;
 import entities.Receipt;
 import entities.WrapperReceipts;
+import exceptions.MyDAOException;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -35,7 +36,7 @@ public class ReceiptDAOImpl implements ReceiptDAO {
 
     private JAXBContext context;
 
-    public ReceiptDAOImpl() {
+    public ReceiptDAOImpl() throws MyDAOException {
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             File schemaFile = new File(schemaLocation);
@@ -47,25 +48,25 @@ public class ReceiptDAOImpl implements ReceiptDAO {
             System.out.println("ReceiptDAOImpl Created");
         } catch (SAXException | IOException | JAXBException e) {
             System.out.println("XML file is not valid.");
-            throw new RuntimeException(e);
+            throw new MyDAOException(e.getMessage());
         }
     }
 
     @Override
-    public List<Receipt> getAllReceipts() {
+    public List<Receipt> getAllReceipts() throws MyDAOException {
         WrapperReceipts wrapperReceipts = new WrapperReceipts();
         try {
             File file = new File(xmlLocation);
             Unmarshaller unmarshaller = context.createUnmarshaller();
             wrapperReceipts = (WrapperReceipts) unmarshaller.unmarshal(file);
         } catch (JAXBException e) {
-            e.printStackTrace();
+            throw new MyDAOException(e.getMessage());
         }
         return wrapperReceipts.getReceipts();
     }
 
     @Override
-    public List<Receipt> getReceiptsInCurrentDay() {
+    public List<Receipt> getReceiptsInCurrentDay() throws MyDAOException {
         ArrayList<Receipt> receipts = (ArrayList<Receipt>) getAllReceipts();
         ArrayList<Receipt> result = new ArrayList<>();
         for (Receipt receipt : receipts) {
@@ -77,7 +78,7 @@ public class ReceiptDAOImpl implements ReceiptDAO {
     }
 
     @Override
-    public List<Receipt> getReceiptsInCurrentMonth() {
+    public List<Receipt> getReceiptsInCurrentMonth() throws MyDAOException {
         ArrayList<Receipt> receipts = (ArrayList<Receipt>) getAllReceipts();
         ArrayList<Receipt> result = new ArrayList<>();
         for (Receipt receipt : receipts) {
@@ -89,7 +90,7 @@ public class ReceiptDAOImpl implements ReceiptDAO {
     }
 
     @Override
-    public List<Receipt> getReceiptsInCurrentQuarter() {
+    public List<Receipt> getReceiptsInCurrentQuarter() throws MyDAOException {
         ArrayList<Receipt> receipts = (ArrayList<Receipt>) getAllReceipts();
         ArrayList<Receipt> result = new ArrayList<>();
         for (Receipt receipt : receipts) {
@@ -101,7 +102,7 @@ public class ReceiptDAOImpl implements ReceiptDAO {
     }
 
     @Override
-    public void addReceipt(Receipt receipt) {
+    public void addReceipt(Receipt receipt) throws MyDAOException {
         try {
             File file = new File(xmlLocation);
             ArrayList<Receipt> receipts = (ArrayList<Receipt>) getAllReceipts();
@@ -115,12 +116,12 @@ public class ReceiptDAOImpl implements ReceiptDAO {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.marshal(wrapperReceipts, file);
         } catch (JAXBException e) {
-            e.printStackTrace();
+            throw new MyDAOException(e.getMessage());
         }
     }
 
     @Override
-    public void deleteReceipt(Receipt receipt) {
+    public void deleteReceipt(Receipt receipt) throws MyDAOException {
         try {
             File file = new File(xmlLocation);
             ArrayList<Receipt> receipts = (ArrayList<Receipt>) getAllReceipts();
@@ -133,7 +134,7 @@ public class ReceiptDAOImpl implements ReceiptDAO {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.marshal(wrapperReceipts, file);
         } catch (JAXBException e) {
-            e.printStackTrace();
+            throw new MyDAOException(e.getMessage());
         }
     }
 

@@ -40,4 +40,14 @@
         </ReceiptCustomer>
         <DateOfReceiptService>2018-03-14</DateOfReceiptService>
     </Receipt>
+    <Receipt id="6">
+        <ReceiptService id="7">
+            <servicename>REPAIR DRESSES</servicename>
+        </ReceiptService>
+        <ReceiptCustomer id="15">
+            <name>Lalka</name>
+            <surname>Ozaza</surname>
+        </ReceiptCustomer>
+        <DateOfReceiptService>2018-03-18</DateOfReceiptService>
+    </Receipt>
 </Receipts>
