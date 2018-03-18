@@ -10,12 +10,12 @@ import java.io.Serializable;
 @XmlAccessorType(XmlAccessType.NONE)
 @XmlType(propOrder = {"id", "name"})
 
-public class ReceiptService implements Serializable{
+public class ReceiptService implements Serializable {
 
     @XmlAttribute(required = true)
     private int id;
 
-    @XmlElement(name = "name")
+    @XmlElement(name = "servicename")
     private String name;
 
     public ReceiptService() {

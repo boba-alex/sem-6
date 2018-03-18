@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<ReceiptServices xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-                 xmlns="http://boba-alex.com/ReceiptServices"
-        xsi:noNamespaceSchemaLocation="receipt_services.xsd">
+<ReceiptServices>
     <ReceiptService id="1">
         <servicename>REPAIR PRODUCTS</servicename>
     </ReceiptService>
@@ -22,6 +19,6 @@
         <servicename>THE DESIGN AND TAILORING OF CURTAINS</servicename>
     </ReceiptService>
     <ReceiptService id="7">
-        <servicename>REPAIR DRESSES </servicename>
+        <servicename>REPAIR DRESSES</servicename>
     </ReceiptService>
 </ReceiptServices>

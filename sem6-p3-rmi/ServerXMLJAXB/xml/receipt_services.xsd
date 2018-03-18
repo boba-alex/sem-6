@@ -2,16 +2,14 @@
 
 <xsd:schema version="1.0"
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            xmlns:rs="http://boba-alex.com/ReceiptServices"
-            targetNamespace="http://boba-alex.com/ReceiptServices"
             elementFormDefault="qualified">
 
-    <xsd:element name="ReceiptServices" type="rs:ReceiptServices"/>
+    <xsd:element name="ReceiptServices" type="ReceiptServices"/>
 
     <xsd:complexType name="ReceiptServices">
         <xsd:sequence>
             <xsd:element name="ReceiptService"
-                         type="rs:ReceiptService"
+                         type="ReceiptService"
                          minOccurs="0"
                          maxOccurs="unbounded">
             </xsd:element>
@@ -20,13 +18,13 @@
 
     <xsd:complexType name="ReceiptService">
         <xsd:sequence>
-            <xsd:element name="servicename" type="rs:Name"/>
+            <xsd:element name="servicename" type="ServiceName"/>
         </xsd:sequence>
-        <xsd:attribute name="id" type="rs:MID" use="required"/>
+        <xsd:attribute name="id" type="MID" use="required"/>
 
     </xsd:complexType>
 
-    <xsd:simpleType name="Name">
+    <xsd:simpleType name="ServiceName">
         <xsd:restriction base="xsd:string">
             <xsd:pattern value="[A-Z\s]+"/>
             <xsd:minLength value="4"/>

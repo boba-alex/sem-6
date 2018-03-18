@@ -2,22 +2,14 @@
 
 <xsd:schema version="1.0"
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            xmlns:rs="http://boba-alex.com/ReceiptServices"
-            xmlns:rc="http://boba-alex.com/ReceiptCustomers"
-            xmlns:r="http://boba-alex.com/Receipts"
-            targetNamespace="http://boba-alex.com/Receipts"
             elementFormDefault="qualified">
-    <xsd:import schemaLocation="receipt_services.xsd"
-                namespace="http://boba-alex.com/ReceiptServices"/>
-    <xsd:import schemaLocation="receipt_customers.xsd"
-                namespace="http://boba-alex.com/ReceiptCustomers"/>
 
-    <xsd:element name="Receipts" type="r:Receipts"/>
+    <xsd:element name="Receipts" type="Receipts"/>
 
     <xsd:complexType name="Receipts">
         <xsd:sequence>
             <xsd:element name="Receipt"
-                         type="r:Receipt"
+                         type="Receipt"
                          minOccurs="0"
                          maxOccurs="unbounded">
             </xsd:element>
@@ -26,11 +18,50 @@
 
     <xsd:complexType name="Receipt">
         <xsd:sequence>
-            <xsd:element name="ReceiptService" type="rs:ReceiptService"/>
-            <xsd:element name="ReceiptCustomer" type="rc:ReceiptCustomer"/>
+            <xsd:element name="ReceiptService" type="ReceiptService"/>
+            <xsd:element name="ReceiptCustomer" type="ReceiptCustomer"/>
             <xsd:element name="DateOfReceiptService" type="xsd:date"/>
         </xsd:sequence>
-        <xsd:attribute name="id" type="rc:MID" use="required"/>
+        <xsd:attribute name="id" type="MID" use="required"/>
     </xsd:complexType>
+
+    <xsd:complexType name="ReceiptService">
+        <xsd:sequence>
+            <xsd:element name="servicename" type="ServiceName"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="MID" use="required"/>
+
+    </xsd:complexType>
+
+    <xsd:simpleType name="ServiceName">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Z\s]+"/>
+            <xsd:minLength value="4"/>
+            <xsd:maxLength value="50"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="MID">
+        <xsd:restriction base="xsd:integer">
+            <xsd:pattern value="[1-9][0-9]*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="ReceiptCustomer">
+        <xsd:sequence>
+            <xsd:element name="name" type="Name"/>
+            <xsd:element name="surname" type="Name"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="MID" use="required"/>
+
+    </xsd:complexType>
+
+    <xsd:simpleType name="Name">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Za-z0-9]+"/>
+            <xsd:minLength value="3"/>
+            <xsd:maxLength value="25"/>
+        </xsd:restriction>
+    </xsd:simpleType>
 
 </xsd:schema>

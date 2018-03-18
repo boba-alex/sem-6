@@ -1,6 +1,5 @@
-<?xml version="1.0"?>
-<ReceiptCustomers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://boba-alex.com/ReceiptCustomers"
-                  xsi:noNamespaceSchemaLocation="receipt_customers.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ReceiptCustomers>
     <ReceiptCustomer id="1">
         <name>Ivan</name>
         <surname>Bolny</surname>
@@ -56,5 +55,9 @@
     <ReceiptCustomer id="14">
         <name>Dimas</name>
         <surname>Romanovets</surname>
+    </ReceiptCustomer>
+    <ReceiptCustomer id="15">
+        <name>a</name>
+        <surname>b</surname>
     </ReceiptCustomer>
 </ReceiptCustomers>

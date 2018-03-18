@@ -8,6 +8,7 @@ package entities;
 
 
 import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -29,6 +30,7 @@ public class Receipt implements Serializable {
     @XmlElement(name = "ReceiptCustomer")
     private ReceiptCustomer receiptCustomer;
 
+    @XmlJavaTypeAdapter(value = LocalDateAdapter.class)
     @XmlElement(name = "DateOfReceiptService")
     private LocalDate date;
 
