@@ -7,30 +7,37 @@ package entities;
  */
 
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
- *
  * @author User
  */
 
-@XmlRootElement
-public class Receipt implements Serializable{
+@XmlRootElement(name = "Receipt")
+@XmlAccessorType(XmlAccessType.NONE)
+@XmlType(propOrder = {"id", "receiptService", "receiptCustomer", "date"})
+public class Receipt implements Serializable {
+
+    @XmlAttribute(required = true)
     private int id;
+
+    @XmlElement(name = "ReceiptService")
     private ReceiptService receiptService;
+
+    @XmlElement(name = "ReceiptCustomer")
     private ReceiptCustomer receiptCustomer;
+
+    @XmlElement(name = "DateOfReceiptService")
     private LocalDate date;
 
-    public Receipt(){}
-    
-    public Receipt(ReceiptService receiptService, ReceiptCustomer receiptCustomer, LocalDate date){
+    public Receipt() {
+    }
+
+    public Receipt(ReceiptService receiptService, ReceiptCustomer receiptCustomer, LocalDate date) {
         this.receiptService = receiptService;
-        this.receiptCustomer=receiptCustomer;
+        this.receiptCustomer = receiptCustomer;
         this.date = date;
     }
 
@@ -38,7 +45,6 @@ public class Receipt implements Serializable{
         return id;
     }
 
-    @XmlAttribute
     public void setId(int id) {
         this.id = id;
     }
@@ -47,7 +53,6 @@ public class Receipt implements Serializable{
         return receiptService;
     }
 
-    @XmlElement
     public void setReceiptService(ReceiptService receiptService) {
         this.receiptService = receiptService;
     }
@@ -56,7 +61,6 @@ public class Receipt implements Serializable{
         return receiptCustomer;
     }
 
-    @XmlElement
     public void setReceiptCustomer(ReceiptCustomer receiptCustomer) {
         this.receiptCustomer = receiptCustomer;
     }
@@ -65,16 +69,15 @@ public class Receipt implements Serializable{
         return date;
     }
 
-    @XmlElement
     public void setDate(LocalDate date) {
         this.date = date;
     }
 
-    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer){
+    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer) {
         this.receiptCustomer = receiptCustomer;
     }
 
-    public void addReceiptService(final ReceiptService receiptService){
+    public void addReceiptService(final ReceiptService receiptService) {
         this.receiptService = receiptService;
     }
 

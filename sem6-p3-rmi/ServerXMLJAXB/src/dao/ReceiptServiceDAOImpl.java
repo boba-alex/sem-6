@@ -2,11 +2,14 @@ package dao;
 
 import constants.ConstantsXML;
 import entities.ReceiptService;
+import entities.WrapperReceiptServices;
 import org.xml.sax.SAXException;
 
+import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
@@ -32,25 +35,16 @@ import java.util.List;
  */
 public class ReceiptServiceDAOImpl implements ReceiptServiceDAO {
     private String xmlLocation = ConstantsXML.RECEIPT_SERVICES_XML;
+    private String schemaLocation = ConstantsXML.RECEIPT_SERVICES_XSD;
 
-    public static void main(String[] args) {
-        ReceiptService receiptService = new ReceiptService("AAA");
+    private JAXBContext context;
 
-        try {
-            JAXBContext context = JAXBContext.newInstance(ReceiptService.class);
-            Marshaller marshaller = context.createMarshaller();
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-            marshaller.marshal(receiptService, new File(ConstantsXML.RECEIPT_SERVICES_XML));
-        } catch (JAXBException e) {
-            e.printStackTrace();
-        }
-    }
     public ReceiptServiceDAOImpl() {
-        SchemaFactory factory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
-        File schemaLocation = new File(ConstantsXML.RECEIPT_SERVICES_XSD);
+        SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        File schemaFile = new File(schemaLocation);
         Schema schema;
         try {
-            schema = factory.newSchema(schemaLocation);
+            schema = factory.newSchema(schemaFile);
         } catch (SAXException e) {
             throw new RuntimeException(e);
         }
@@ -67,45 +61,15 @@ public class ReceiptServiceDAOImpl implements ReceiptServiceDAO {
 
     @Override
     public List<ReceiptService> getReceiptServices() {
-
-//        List<ReceiptService> receiptServices = new ArrayList<>();
-//        ReceiptService receiptService = null;
-//        XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
-//
-//        try {
-//            //initialize reader and feed it with xml-file
-//            XMLEventReader reader = xmlInputFactory.createXMLEventReader(new FileInputStream(xmlLocation));
-//            // go for all elements of xml-file
-//            while (reader.hasNext()) {
-//                //getting event(element) and destruct it
-//                XMLEvent xmlEvent = reader.nextEvent();
-//                if (xmlEvent.isStartElement()) {
-//                    StartElement startElement = xmlEvent.asStartElement();
-//                    if (startElement.getName().getLocalPart().equals("ReceiptService")) {
-//                        receiptService = new ReceiptService();
-//                        //get attribute id for each element ReceiptService
-//                        Attribute idAttr = startElement.getAttributeByName(new QName("id"));
-//                        if (idAttr != null) {
-//                            receiptService.setId(Integer.parseInt(idAttr.getValue()));
-//                        }
-//                    } else if (startElement.getName().getLocalPart().equals("servicename")) {
-//                        xmlEvent = reader.nextEvent();
-//                        receiptService.setName(xmlEvent.asCharacters().getData());
-//                    }
-//                }
-//                //if we find closed ReceiptService, add it to collection
-//                if (xmlEvent.isEndElement()) {
-//                    EndElement endElement = xmlEvent.asEndElement();
-//                    if (endElement.getName().getLocalPart().equals("ReceiptService")) {
-//                        receiptServices.add(receiptService);
-//                    }
-//                }
-//            }
-//        } catch (XMLStreamException | FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        return receiptServices;
-        return null;
+        WrapperReceiptServices wrapperReceiptServices = new WrapperReceiptServices();
+        try {
+            File file = new File(xmlLocation);
+            Unmarshaller unmarshaller = context.createUnmarshaller();
+            wrapperReceiptServices = (WrapperReceiptServices) unmarshaller.unmarshal(file);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+        return wrapperReceiptServices.getReceiptServices();
     }
 
 }

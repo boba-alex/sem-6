@@ -1,17 +1,21 @@
 package entities;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
 /**
  * Created by User on 20.02.2018.
  */
-@XmlRootElement
+@XmlRootElement(name = "ReceiptService")
+@XmlAccessorType(XmlAccessType.NONE)
+@XmlType(propOrder = {"id", "name"})
+
 public class ReceiptService implements Serializable{
 
+    @XmlAttribute(required = true)
     private int id;
+
+    @XmlElement(name = "name")
     private String name;
 
     public ReceiptService() {
@@ -25,7 +29,6 @@ public class ReceiptService implements Serializable{
         return id;
     }
 
-    @XmlAttribute
     public void setId(int id) {
         this.id = id;
     }
@@ -34,7 +37,6 @@ public class ReceiptService implements Serializable{
         return name;
     }
 
-    @XmlElement
     public void setName(String name) {
         this.name = name;
     }
