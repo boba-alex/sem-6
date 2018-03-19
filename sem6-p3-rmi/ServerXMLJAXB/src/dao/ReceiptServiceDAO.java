@@ -1,7 +1,7 @@
 package dao;
 
-import entities.ReceiptService;
 import exceptions.MyDAOException;
+import entities.ReceiptService;
 
 import java.util.List;
 

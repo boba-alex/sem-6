@@ -1,9 +1,9 @@
 package dao;
 
 import constants.ConstantsXML;
-import entities.ReceiptService;
 import entities.WrapperReceiptServices;
 import exceptions.MyDAOException;
+import entities.ReceiptService;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -26,8 +26,19 @@ public class ReceiptServiceDAOImpl implements ReceiptServiceDAO {
     private String xmlLocation = ConstantsXML.RECEIPT_SERVICES_XML;
     private String schemaLocation = ConstantsXML.RECEIPT_SERVICES_XSD;
 
+    /**
+     * Контекст класса-обертки
+     *
+     * @see WrapperReceiptServices ,JAXBContext
+     */
     private JAXBContext context;
 
+    /**
+     * Проверка валидности XML по схеме и получение контекста
+     *
+     * @see WrapperReceiptServices,JAXBContext
+     * @throws MyDAOException при неправильном XML файле
+     */
     public ReceiptServiceDAOImpl() throws MyDAOException {
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);

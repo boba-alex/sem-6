@@ -1,12 +1,5 @@
 package dao;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 import constants.ConstantsSQL;
 import entities.Receipt;
 import entities.ReceiptCustomer;
@@ -23,9 +16,22 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 
+/**
+ * <p>Класс, реализующий интерфейс, {@link ReceiptDAO},
+ * служит для <b>хранения процедур</b> для работы с квитанциями.
+ * Осуществляет работу с базой данных <tt>MySQL.</tt></p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
+ * @see ReceiptDAO
+ */
 public class ReceiptDAOImpl implements ReceiptDAO {
 
-
+    /**
+     * Метод добавления квитанции.
+     *
+     * @param receipt добавляемая квитанция
+     */
     @Override
     public void addReceipt(Receipt receipt) {
         Connection connection = null;
@@ -59,6 +65,12 @@ public class ReceiptDAOImpl implements ReceiptDAO {
         }
     }
 
+    /**
+     * Метод для получения списка квитанций в зависимости от переданного SQL-запроса.
+     *
+     * @param sqlex SQL-запрос
+     * @return List список квитанций, полученный согласно SQL-запросу.
+     */
     @Override
     public List<Receipt> getReceipts(String sqlex) {
         Connection connection = null;
@@ -98,6 +110,13 @@ public class ReceiptDAOImpl implements ReceiptDAO {
         return receipts;
     }
 
+    /**
+     * Метод для инициализации списка квитанций из {@link ResultSet}.
+     *
+     * @param resultSet передаваемый параметр
+     * @return List список проинициализированных квитанций
+     * @throws SQLException исключение {@link SQLException}
+     */
     private List<Receipt> initReceipts(ResultSet resultSet) throws SQLException {
         List<Receipt> receipts = new ArrayList<Receipt>();
         while (resultSet.next()) {
@@ -123,6 +142,11 @@ public class ReceiptDAOImpl implements ReceiptDAO {
         return receipts;
     }
 
+    /**
+     * Метод для удаления квитанции.
+     *
+     * @param receipt удаляемая квитанция
+     */
     @Override
     public void deleteReceipt(Receipt receipt) {
         Connection connection = null;

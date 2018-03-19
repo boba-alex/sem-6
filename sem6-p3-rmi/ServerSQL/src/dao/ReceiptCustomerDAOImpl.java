@@ -9,10 +9,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by User on 20.02.2018.
+ * <p>Класс, реализующий интерфейс, {@link ReceiptCustomerDAO},
+ * служит для <b>хранения процедур</b> для работы с клиентами.
+ * Осуществляет работу с базой данных <tt>MySQL.</tt></p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
+ * @see ReceiptCustomerDAO
  */
 public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
 
+    /**
+     * Метод для добавления клиента.
+     *
+     * @param receiptCustomer добавляемый клиент
+     */
     @Override
     public void addReceiptCustomer(ReceiptCustomer receiptCustomer) {
         Connection connection = null;
@@ -45,6 +56,11 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
         }
     }
 
+    /**
+     * Метод для получения списка клиентов.
+     *
+     * @return List список клиентов
+     */
     @Override
     public List<ReceiptCustomer> getReceiptCurstomers() {
         Connection connection = null;
@@ -84,6 +100,13 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
         return receiptCustomers;
     }
 
+    /**
+     * Метод для получения списка клиентов из {@link ResultSet}.
+     *
+     * @param resultSet параметр, который требуется обработать
+     * @return List список проинициализированных клиентов
+     * @throws SQLException исключение {@link SQLException}
+     */
     private List<ReceiptCustomer> initReceiptCustomers(ResultSet resultSet) throws SQLException {
         List<ReceiptCustomer> receiptCustomers = new ArrayList<ReceiptCustomer>();
         while (resultSet.next()) {

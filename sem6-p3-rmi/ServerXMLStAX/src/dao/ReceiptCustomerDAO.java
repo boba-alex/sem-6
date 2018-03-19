@@ -9,5 +9,6 @@ import java.util.List;
  */
 public interface ReceiptCustomerDAO {
     void addReceiptCustomer(final ReceiptCustomer receiptCustomer);
+
     List<ReceiptCustomer> getReceiptCustomers();
 }

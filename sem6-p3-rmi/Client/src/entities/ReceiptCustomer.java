@@ -3,7 +3,10 @@ package entities;
 import java.io.Serializable;
 
 /**
- * Created by User on 20.02.2018.
+ *<p>Класс-сущность, предоставляющая информацию о клиенте, который заказал услугу.</p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
  */
 public class ReceiptCustomer implements Serializable{
     private int id;

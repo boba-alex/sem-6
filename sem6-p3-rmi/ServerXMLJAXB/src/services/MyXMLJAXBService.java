@@ -10,7 +10,13 @@ import java.rmi.RemoteException;
 import java.util.List;
 
 /**
- * Created by User on 13.03.2018.
+ * <p>Класс служит для <b>хранения процедур</b>,
+ * к которым можно обращаться средствами <tt>RMI</tt>,
+ * для работы с базой данных XML посредством технологии <tt><a href="https://en.wikipedia.org/wiki/Java_Architecture_for_XML_Binding">JAXB</a></tt></p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
+ * @see MyRemoteService исключение <tt><a href="https://ru.wikipedia.org/wiki/RMI">RMI</a></tt>
  */
 public class MyXMLJAXBService implements MyRemoteService {
     private ReceiptDAO receiptDAO;

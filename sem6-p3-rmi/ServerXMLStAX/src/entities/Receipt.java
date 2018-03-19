@@ -1,30 +1,26 @@
 package entities;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
+ * <p>Класс-сущность, предоставляющая информацию о квитанции об оказанной услуге.</p>
  *
- * @author User
+ * @author Polischuk Alexander
+ * @version 1.0
  */
-public class Receipt implements Serializable{
+public class Receipt implements Serializable {
     private int id;
     private ReceiptService receiptService;
     private ReceiptCustomer receiptCustomer;
     private LocalDate date;
 
-    public Receipt(){}
-    
-    public Receipt(ReceiptService receiptService, ReceiptCustomer receiptCustomer, LocalDate date){
+    public Receipt() {
+    }
+
+    public Receipt(ReceiptService receiptService, ReceiptCustomer receiptCustomer, LocalDate date) {
         this.receiptService = receiptService;
-        this.receiptCustomer=receiptCustomer;
+        this.receiptCustomer = receiptCustomer;
         this.date = date;
     }
 
@@ -60,11 +56,11 @@ public class Receipt implements Serializable{
         this.date = date;
     }
 
-    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer){
+    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer) {
         this.receiptCustomer = receiptCustomer;
     }
 
-    public void addReceiptService(final ReceiptService receiptService){
+    public void addReceiptService(final ReceiptService receiptService) {
         this.receiptService = receiptService;
     }
 

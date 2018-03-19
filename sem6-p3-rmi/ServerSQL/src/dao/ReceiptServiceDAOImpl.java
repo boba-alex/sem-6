@@ -8,10 +8,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by User on 20.02.2018.
+ * <p>Класс, реализующий интерфейс, {@link ReceiptServiceDAO},
+ * служит для <b>хранения процедур</b> для работы с услугами.
+ * Осуществляет работу с базой данных <tt>MySQL.</tt></p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
+ * @see ReceiptServiceDAO
  */
-public class ReceiptServiceDAOImpl implements ReceiptServiceDAO{
+public class ReceiptServiceDAOImpl implements ReceiptServiceDAO {
 
+    /**
+     * Метод для получения списка всех услуг.
+     *
+     * @return List список всех услуг
+     */
     @Override
     public List<ReceiptService> getReceiptServices() {
         Connection connection = null;
@@ -51,6 +62,13 @@ public class ReceiptServiceDAOImpl implements ReceiptServiceDAO{
         return receiptServices;
     }
 
+    /**
+     * Метод для инициализации списка услуг на основе {@link ResultSet}
+     *
+     * @param resultSet передаваемый параметр
+     * @return List список инициализированных услуг
+     * @throws SQLException исключение {@link SQLException}
+     */
     private List<ReceiptService> initReceiptServices(ResultSet resultSet) throws SQLException {
         List<ReceiptService> receiptServices = new ArrayList<ReceiptService>();
         while (resultSet.next()) {

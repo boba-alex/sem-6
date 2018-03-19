@@ -2,11 +2,8 @@ package dao;
 
 import constants.ConstantsXML;
 import entities.ReceiptCustomer;
-import entities.ReceiptService;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
 
-import javax.swing.*;
 import javax.xml.namespace.QName;
 import javax.xml.stream.*;
 import javax.xml.stream.events.Attribute;
@@ -19,10 +16,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.*;
-import java.rmi.RemoteException;
-import java.sql.*;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 

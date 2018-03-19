@@ -7,6 +7,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * <p>Класс-обертка, содержащий список клиентов.</p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
+ */
 @XmlRootElement(name = "ReceiptCustomers")
 @XmlAccessorType(XmlAccessType.NONE)
 public class WrapperReceiptCustomers implements Serializable{

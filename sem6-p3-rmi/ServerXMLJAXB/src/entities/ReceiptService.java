@@ -4,7 +4,10 @@ import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
 /**
- * Created by User on 20.02.2018.
+ *<p>Класс-сущность, предоставляющая информацию об услуге.</p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
  */
 @XmlRootElement(name = "ReceiptService")
 @XmlAccessorType(XmlAccessType.NONE)

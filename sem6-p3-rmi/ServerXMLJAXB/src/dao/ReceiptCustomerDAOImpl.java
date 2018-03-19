@@ -1,9 +1,9 @@
 package dao;
 
-import constants.ConstantsXML;
-import entities.ReceiptCustomer;
 import entities.WrapperReceiptCustomers;
 import exceptions.MyDAOException;
+import constants.ConstantsXML;
+import entities.ReceiptCustomer;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;

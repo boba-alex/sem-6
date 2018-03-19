@@ -1,15 +1,9 @@
 package db;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 import constants.ConstantsSQL;
 import entities.Receipt;
 import entities.ReceiptCustomer;
+import exceptions.MyDAOException;
 import entities.ReceiptService;
 import services.MySQLService;
 
@@ -24,10 +18,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author User
+ * <p>Класс для тестирования подключения к базе данных.</p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
  */
 public class TestConnection {
 
+    /**
+     * Главный метод, который запускается в классе {@link TestConnection}.
+     *
+     * @param args параметры, передаваемые аргументами в коммандной строке
+     */
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -54,6 +56,8 @@ public class TestConnection {
         } catch (SQLException ex) {
             Logger.getLogger(TestConnection.class.getName()).log(Level.SEVERE, null, ex);
         } catch (RemoteException e) {
+            e.printStackTrace();
+        } catch (MyDAOException e) {
             e.printStackTrace();
         }
     }

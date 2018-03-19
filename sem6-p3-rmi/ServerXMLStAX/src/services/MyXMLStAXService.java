@@ -4,7 +4,6 @@ import dao.*;
 import entities.Receipt;
 import entities.ReceiptCustomer;
 import entities.ReceiptService;
-import org.xml.sax.SAXParseException;
 
 import java.rmi.RemoteException;
 import java.util.List;
@@ -29,42 +28,42 @@ public class MyXMLStAXService implements MyRemoteService {
     }
 
     @Override
-    public List<Receipt> getAllReceipts() throws RemoteException{
+    public List<Receipt> getAllReceipts() throws RemoteException {
         return receiptDAO.getAllReceipts();
     }
 
     @Override
-    public List<Receipt> getReceiptsInCurrentDay() throws RemoteException{
+    public List<Receipt> getReceiptsInCurrentDay() throws RemoteException {
         return receiptDAO.getReceiptsInCurrentDay();
     }
 
     @Override
-    public List<Receipt> getReceiptsInCurrentMonth() throws RemoteException{
+    public List<Receipt> getReceiptsInCurrentMonth() throws RemoteException {
         return receiptDAO.getReceiptsInCurrentMonth();
     }
 
     @Override
-    public List<Receipt> getReceiptsInCurrentQuarter() throws RemoteException{
+    public List<Receipt> getReceiptsInCurrentQuarter() throws RemoteException {
         return receiptDAO.getReceiptsInCurrentQuarter();
     }
 
     @Override
-    public void deleteReceipt(Receipt receipt) throws RemoteException{
+    public void deleteReceipt(Receipt receipt) throws RemoteException {
         receiptDAO.deleteReceipt(receipt);
     }
 
     @Override
-    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer) throws RemoteException{
+    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer) throws RemoteException {
         receiptCustomerDAO.addReceiptCustomer(receiptCustomer);
     }
 
     @Override
-    public List<ReceiptCustomer> getReceiptCurstomers() throws RemoteException{
+    public List<ReceiptCustomer> getReceiptCurstomers() throws RemoteException {
         return receiptCustomerDAO.getReceiptCustomers();
     }
 
     @Override
-    public List<ReceiptService> getReceiptServices() throws RemoteException{
+    public List<ReceiptService> getReceiptServices() throws RemoteException {
         return receiptServiceDAO.getReceiptServices();
     }
 }

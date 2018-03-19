@@ -1,5 +1,9 @@
 package ui.fx;
 
+import entities.Receipt;
+import entities.ReceiptCustomer;
+import entities.ReceiptService;
+import services.MyRemoteService;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -7,10 +11,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
-import entities.Receipt;
-import entities.ReceiptCustomer;
-import entities.ReceiptService;
-import services.MyRemoteService;
 
 import java.net.URL;
 import java.rmi.NotBoundException;
@@ -21,16 +21,37 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+/**
+ * <p>Класс контроллер на основе JavaFX, реализующий интерфейс {@link Initializable} служит для <b>хранения процедур</b>,
+ * к которым можно обращаться средствами <tt><a href="https://ru.wikipedia.org/wiki/RMI">RMI</a></tt>.</p>
+ *
+ * @author Polischuk Alexander
+ * @version 1.0
+ */
+
 public class Controller implements Initializable {
 
+    /**
+     * Remote интерфейс {@link MyRemoteService}  служит для связи с сервером и
+     * вызова функций обращения к <b>данным</b>.
+     */
     private MyRemoteService myService;
 
+    /**
+     * GUI-список для отображения загруженных данных.
+     */
     @FXML
     ListView<Receipt> list1 = new ListView<>();
 
+    /**
+     * GUI-список для отображения выборки из загруженного списка согласно некторым критериям.
+     */
     @FXML
     ListView<Receipt> list2 = new ListView<>();
 
+    /**
+     * Загрузка квитанций из базы данных.
+     */
     @FXML
     private void loadReceiptsFromDatabase() {
         try {
@@ -41,11 +62,17 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Метод для выхода из приложения.
+     */
     @FXML
     private void exitApp() {
         Platform.exit();
     }
 
+    /**
+     * Метод для обновления GUI-списка квитанций за текущий день.
+     */
     @FXML
     private void loadReceiptsInCurrentDay() {
         try {
@@ -55,6 +82,9 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Метод для обновления GUI-списка квитанций за текущий месяц.
+     */
     @FXML
     private void loadReceiptsInCurrentMonth() {
         try {
@@ -64,6 +94,9 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Метод для обновления GUI-списка квитанций за текущий квартал.
+     */
     @FXML
     private void loadReceiptsInCurrentQuarter() {
         try {
@@ -73,6 +106,9 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Метод для удаления выбранной квитанции.
+     */
     @FXML
     private void deleteChosenReceipt() {
         try {
@@ -92,6 +128,10 @@ public class Controller implements Initializable {
 
     }
 
+    /**
+     * Метод для добавления нового клиента.
+     * При этом создается новое модальное диалоговое окно для ввода требуемых параметров инициализации клиента.
+     */
     @FXML
     private void addCustomer() {
         Dialog dialog = new Dialog();
@@ -130,6 +170,10 @@ public class Controller implements Initializable {
 
     }
 
+    /**
+     * Метод для добавления новой квитанции.
+     * При этом создается новое модальное диалоговое окно для ввода требуемых параметров инициализации квитанции.
+     */
     @FXML
     private void addReceipt() {
         Dialog dialog = new Dialog();
@@ -200,27 +244,43 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Метод для обновления GUI-списка квитанций.
+     *
+     * @param receipts новый список квитанций
+     */
     private void updateList1(ArrayList<Receipt> receipts) {
         list1.setItems(FXCollections.observableArrayList(receipts));
     }
 
+    /**
+     * Метод для очищения всех элементов, отображение которых зависело
+     * от GUI-списка, который отображает загруженные данные из базы данных.
+     */
     private void clearFormAfterUpdateList1() {
         list2.getItems().clear();
     }
 
+    /**
+     * Метод для обновления GUI-списка квитанций, который отображается согласно определенному правилу.
+     *
+     * @param receipts новый список квитанций
+     */
     private void updateList2(ArrayList<Receipt> receipts) {
         list2.setItems(FXCollections.observableArrayList(receipts));
     }
 
+    /**
+     * Метод инициализации {@link Controller}. Создание экземпляра сервиса клиента.
+     *
+     * @param location  место хранения ресурсов
+     * @param resources для связывания ресурсов
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-        /**
-         * Создание экземпляра сервиса клиента
-         */
         Registry registry = null;
         try {
-             //registry = LocateRegistry.getRegistry("192.168.43.34", 4396);
+            //registry = LocateRegistry.getRegistry("192.168.43.34", 4396);
             registry = LocateRegistry.getRegistry("localhost", 4396);
         } catch (RemoteException e) {
             System.err.println(e.getMessage());
@@ -231,7 +291,7 @@ public class Controller implements Initializable {
             myService = (MyRemoteService) registry.lookup("local/MyService");
         } catch (RemoteException | NotBoundException e) {
             System.err.println("error " + e.getMessage());
-            //JOptionPane.showMessageDialog(null, "Connection refused!");
+
             System.exit(0);
         }
     }

@@ -1,7 +1,7 @@
 package server;
 
-import services.MyRemoteService;
 import services.MySQLService;
+import services.MyRemoteService;
 
 import java.rmi.AlreadyBoundException;
 import java.rmi.Remote;
@@ -11,12 +11,25 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
- * Created by User on 28.02.2018.
+ * Класс сервера (<a href="https://docs.oracle.com/javase/7/docs/api/java/rmi/server/package-summary.html">Java RMI Server</a>), обращающийся к процедурам по
+ * технологии <tt><a href="https://en.wikipedia.org/wiki/Java_remote_method_invocation">RMI</a></tt>
+ * для изменения данных.
+ *
+ * @author Polischuk Akexander
+ * @version 1.0
+ * @see MyRemoteService
  */
 public class RemoteServer {
-
+    /**
+     * Адрес для обращения клиентов по сети.
+     */
     private static final String BINDING_NAME = "local/MyService";
 
+    /**
+     * Основной метод работы сервера.
+     *
+     * @param args параметры командной строки
+     */
     public static void main(String[] args) {
         Registry registry = null;
 
