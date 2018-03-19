@@ -5,95 +5,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eed5c77b-211e-4d9c-babc-8e20c09a6f79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerSQL/src/exceptions/MyDAOException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/exceptions/MyDAOException.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServerSQL/src/exceptions/MyException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/exceptions/MyException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerSQL/exceptions/MyException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/constants/ConstantsXML.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptCustomerDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptCustomerDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptServiceDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/dao/ReceiptServiceDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/entities/Receipt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/entities/ReceiptCustomer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/entities/ReceiptService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/exceptions/MyException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/server/RemoteServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/services/MyRemoteService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ServerXMLStAX/services/MyXMLStAXService.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/entities/Receipt.class" afterPath="$PROJECT_DIR$/out/production/Client/entities/Receipt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/entities/ReceiptCustomer.class" afterPath="$PROJECT_DIR$/out/production/Client/entities/ReceiptCustomer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/entities/ReceiptService.class" afterPath="$PROJECT_DIR$/out/production/Client/entities/ReceiptService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/ui/fx/Controller.class" afterPath="$PROJECT_DIR$/out/production/Client/ui/fx/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/ui/fx/Main.class" afterPath="$PROJECT_DIR$/out/production/Client/ui/fx/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/constants/ConstantsSQL.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/constants/ConstantsSQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/dao/ReceiptCustomerDAOImpl.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/dao/ReceiptCustomerDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/dao/ReceiptDAOImpl.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/dao/ReceiptDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/dao/ReceiptServiceDAOImpl.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/dao/ReceiptServiceDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/db/TestConnection.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/db/TestConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/entities/Receipt.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/entities/Receipt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/entities/ReceiptCustomer.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/entities/ReceiptCustomer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/entities/ReceiptService.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/entities/ReceiptService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/server/RemoteServer.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/server/RemoteServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/services/MyRemoteService.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/services/MyRemoteService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ServerSQL/services/MySQLService.class" afterPath="$PROJECT_DIR$/out/production/ServerSQL/services/MySQLService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constants/ConstantsSQL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constants/ConstantsXML.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constants/class-use/ConstantsSQL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constants/class-use/ConstantsXML.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constants/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constants/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constants/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constants/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/ReceiptCustomerDAO.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/ReceiptCustomerDAOImpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/ReceiptDAO.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/ReceiptDAOImpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/ReceiptServiceDAO.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/ReceiptServiceDAOImpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/class-use/ReceiptCustomerDAO.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/class-use/ReceiptCustomerDAOImpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/class-use/ReceiptDAO.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/class-use/ReceiptDAOImpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/class-use/ReceiptServiceDAO.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/class-use/ReceiptServiceDAOImpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/dao/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/db/TestConnection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/db/class-use/TestConnection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/db/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/db/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/db/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/db/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/LocalDateAdapter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/Receipt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/ReceiptCustomer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/ReceiptService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/WrapperReceiptCustomers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/WrapperReceiptServices.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/WrapperReceipts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/class-use/LocalDateAdapter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/class-use/Receipt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/class-use/ReceiptCustomer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/class-use/ReceiptService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/class-use/WrapperReceiptCustomers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/class-use/WrapperReceiptServices.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/class-use/WrapperReceipts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/entities/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/exceptions/MyDAOException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/exceptions/class-use/MyDAOException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/exceptions/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/exceptions/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/exceptions/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/exceptions/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/serialized-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/server/RemoteServer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/server/class-use/RemoteServer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/server/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/server/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/server/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/server/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/MyRemoteService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/MySQLService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/MyXMLJAXBService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/MyXMLStAXService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/class-use/MyRemoteService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/class-use/MySQLService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/class-use/MyXMLJAXBService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/class-use/MyXMLStAXService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/services/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/ui/fx/Controller.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/ui/fx/Main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/ui/fx/class-use/Controller.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/ui/fx/class-use/Main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/ui/fx/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/ui/fx/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/ui/fx/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/ui/fx/package-use.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/entities/Receipt.java" afterPath="$PROJECT_DIR$/Client/src/entities/Receipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/entities/ReceiptCustomer.java" afterPath="$PROJECT_DIR$/Client/src/entities/ReceiptCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/entities/ReceiptService.java" afterPath="$PROJECT_DIR$/Client/src/entities/ReceiptService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/exceptions/MyDAOException.java" afterPath="$PROJECT_DIR$/Client/src/exceptions/MyDAOException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/services/MyRemoteService.java" afterPath="$PROJECT_DIR$/Client/src/services/MyRemoteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/ui/fx/Controller.java" afterPath="$PROJECT_DIR$/Client/src/ui/fx/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/ui/fx/Main.fxml" afterPath="$PROJECT_DIR$/Client/src/ui/fx/Main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/ui/fx/Main.java" afterPath="$PROJECT_DIR$/Client/src/ui/fx/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/constants/ConstantsSQL.java" afterPath="$PROJECT_DIR$/ServerSQL/src/constants/ConstantsSQL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptCustomerDAO.java" afterPath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptCustomerDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptCustomerDAOImpl.java" afterPath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptCustomerDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptDAO.java" afterPath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptDAOImpl.java" afterPath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptServiceDAO.java" afterPath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptServiceDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptServiceDAOImpl.java" afterPath="$PROJECT_DIR$/ServerSQL/src/dao/ReceiptServiceDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/db/TestConnection.java" afterPath="$PROJECT_DIR$/ServerSQL/src/db/TestConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/entities/Receipt.java" afterPath="$PROJECT_DIR$/ServerSQL/src/entities/Receipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/entities/ReceiptCustomer.java" afterPath="$PROJECT_DIR$/ServerSQL/src/entities/ReceiptCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/entities/ReceiptService.java" afterPath="$PROJECT_DIR$/ServerSQL/src/entities/ReceiptService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/server/RemoteServer.java" afterPath="$PROJECT_DIR$/ServerSQL/src/server/RemoteServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/services/MyRemoteService.java" afterPath="$PROJECT_DIR$/ServerSQL/src/services/MyRemoteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerSQL/src/services/MySQLService.java" afterPath="$PROJECT_DIR$/ServerSQL/src/services/MySQLService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/constants/ConstantsXML.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/constants/ConstantsXML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptCustomerDAO.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptCustomerDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptCustomerDAOImpl.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptCustomerDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptDAO.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptServiceDAO.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptServiceDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptServiceDAOImpl.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/dao/ReceiptServiceDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/LocalDateAdapter.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/LocalDateAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/Receipt.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/Receipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/ReceiptCustomer.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/ReceiptCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/ReceiptService.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/ReceiptService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/WrapperReceiptCustomers.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/WrapperReceiptCustomers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/WrapperReceiptServices.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/WrapperReceiptServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/WrapperReceipts.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/entities/WrapperReceipts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/exceptions/MyDAOException.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/exceptions/MyDAOException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/server/RemoteServer.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/server/RemoteServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/services/MyRemoteService.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/services/MyRemoteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLJAXB/src/services/MyXMLJAXBService.java" afterPath="$PROJECT_DIR$/ServerXMLJAXB/src/services/MyXMLJAXBService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/constants/ConstantsXML.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/constants/ConstantsXML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAO.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptCustomerDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAO.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAOImpl.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAO.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/dao/ReceiptServiceDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/entities/Receipt.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/entities/Receipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/entities/ReceiptCustomer.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/entities/ReceiptCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/entities/ReceiptService.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/entities/ReceiptService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/server/RemoteServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/services/MyRemoteService.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/services/MyRemoteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java" afterPath="$PROJECT_DIR$/ServerXMLStAX/src/services/MyXMLStAXService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -180,7 +199,7 @@
         <entry file="file://$PROJECT_DIR$/ServerSQL/src/server/RemoteServer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -209,8 +228,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="9" column="77" lean-forward="false" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
+            <state relative-caret-position="399">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -912,7 +931,7 @@
       <workItem from="1521296179485" duration="28000" />
       <workItem from="1521374061121" duration="11562000" />
       <workItem from="1521391358067" duration="8189000" />
-      <workItem from="1521490090113" duration="8184000" />
+      <workItem from="1521490090113" duration="8380000" />
     </task>
     <task id="LOCAL-00001" summary="Dao Changed; LocalDateAdapter + xml + xsd">
       <created>1521388319695</created>
@@ -928,11 +947,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521392585424</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="javadoc comments added">
+      <created>1521499465819</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521499465819</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85205000" />
+    <option name="totallyTimeSpent" value="85401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -977,7 +1003,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dao Changed; LocalDateAdapter + xml + xsd" />
     <MESSAGE value="Server corrected + Dao + DAOException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server corrected + Dao + DAOException" />
+    <MESSAGE value="javadoc comments added" />
+    <option name="LAST_COMMIT_MESSAGE" value="javadoc comments added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1403,7 +1430,7 @@
     <entry file="file://$PROJECT_DIR$/ServerSQL/src/server/RemoteServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1426,8 +1453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/ui/fx/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="9" column="77" lean-forward="false" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
+        <state relative-caret-position="399">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
           <folding />
         </state>
       </provider>
