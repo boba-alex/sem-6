@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author Polischuk Alexander
  * @version 1.0
- * @see Remote
+ * @see <a href="https://docs.oracle.com/javase/7/docs/api/java/rmi/Remote.html">Remote</a>
  */
 public interface MyRemoteService extends Remote {
 

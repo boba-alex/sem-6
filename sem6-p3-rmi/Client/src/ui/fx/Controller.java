@@ -22,7 +22,8 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 /**
- * <p>Класс контроллер на основе JavaFX, реализующий интерфейс {@link Initializable} служит для <b>хранения процедур</b>,
+ * <p>Класс контроллер на основе JavaFX, реализующий интерфейс <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/fxml/Initializable.html">{@link Initializable}</a>
+ * служит для <b>хранения процедур</b>,
  * к которым можно обращаться средствами <tt><a href="https://ru.wikipedia.org/wiki/RMI">RMI</a></tt>.</p>
  *
  * @author Polischuk Alexander

@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * <p>Класс на основе {@link Application} для запуска клиентского приложения.</p>
+ * <p>Класс на основе <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html">{@link Application}</a> для запуска клиентского приложения.</p>
  *
  * @author Polischuk Alexander
  * @version 1.0
