@@ -28,9 +28,12 @@ public class ThirdServlet extends HttpServlet {
                 String surname = request.getParameter("surname");
                 String street = request.getParameter("street");
                 if (name != null && surname != null && street != null && name.length() > 0 && surname.length() > 0 && street.length() > 0) {
-                    ((Receipt) session.getAttribute("receipt")).setName(name);
-                    ((Receipt) session.getAttribute("receipt")).setSurname(surname);
-                    ((Receipt) session.getAttribute("receipt")).setStreet(street);
+                    Receipt receipt = (Receipt)session.getAttribute("receipt");
+                    receipt.setName(name);
+                    receipt.setSurname(surname);
+                    receipt.setStreet(street);
+                    session.setAttribute("receipt", receipt);
+                    System.out.println(((Receipt) session.getAttribute("receipt")));
                     request.getRequestDispatcher("/finishStep").forward(request, response);
                 }
 

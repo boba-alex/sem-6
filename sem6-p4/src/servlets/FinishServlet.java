@@ -49,6 +49,7 @@ public class FinishServlet extends HttpServlet {
         out.println("<br>Name: " + ((Receipt) session.getAttribute("receipt")).getName());
         out.println("<br>Surname: " + ((Receipt) session.getAttribute("receipt")).getSurname());
         out.println("<br>Street: " + ((Receipt) session.getAttribute("receipt")).getStreet());
+        out.println("<br>Street: " + session.getAttribute("lololo"));
         out.println("<form name=\"finishform\" action=/thirdStep method=\"GET\">\n" +
                 "<br><br><input type=\"submit\" value=\"PREVIOUS\"/>\n" +
                 "</form>");

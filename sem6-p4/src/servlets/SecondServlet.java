@@ -23,11 +23,16 @@ public class SecondServlet extends HttpServlet {
         String button2 = request.getParameter("button2");
         if (button2 != null) {
             if (button2.equals("prev")) {
-                response.sendRedirect(request.getContextPath() + "/firstStep");
+                //response.sendRedirect(request.getContextPath() + "/firstStep");
+                request.getRequestDispatcher("/firstStep").forward(request, response);
             } else {
                 String quick = request.getParameter("quick");
                 if (quick != null && quick.length() > 0) {
-                    ((Receipt) session.getAttribute("receipt")).setQuick(quick.equals("yes"));
+                    Receipt receipt = (Receipt) session.getAttribute("receipt");
+                    receipt.setQuick(quick.equals("yes"));
+                    session.setAttribute("receipt", receipt);
+                    System.out.println(((Receipt) session.getAttribute("receipt")));
+                    session.setAttribute("lololo", "Try");
                     request.getRequestDispatcher("/thirdStep").forward(request, response);
                 }
             }

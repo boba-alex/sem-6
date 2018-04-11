@@ -1,5 +1,7 @@
 package beans;
 
+import java.io.Serializable;
+
 /**
  * Created by User on 08.04.2018.
  */
@@ -11,7 +13,9 @@ public class Receipt {
     private String street;
 
     public Receipt() {
+        super();
     }
+
 
     public String getService() {
         return service;
