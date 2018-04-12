@@ -19,6 +19,7 @@ public class FinishServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
+        System.out.println("FINISH");
 
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
@@ -49,7 +50,6 @@ public class FinishServlet extends HttpServlet {
         out.println("<br>Name: " + ((Receipt) session.getAttribute("receipt")).getName());
         out.println("<br>Surname: " + ((Receipt) session.getAttribute("receipt")).getSurname());
         out.println("<br>Street: " + ((Receipt) session.getAttribute("receipt")).getStreet());
-        out.println("<br>Street: " + session.getAttribute("lololo"));
         out.println("<form name=\"finishform\" action=/thirdStep method=\"GET\">\n" +
                 "<br><br><input type=\"submit\" value=\"PREVIOUS\"/>\n" +
                 "</form>");

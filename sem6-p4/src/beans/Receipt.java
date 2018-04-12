@@ -13,7 +13,6 @@ public class Receipt {
     private String street;
 
     public Receipt() {
-        super();
     }
 
 

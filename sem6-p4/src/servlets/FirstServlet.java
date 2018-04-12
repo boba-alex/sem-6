@@ -19,11 +19,11 @@ public class FirstServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
+        System.out.println("FIRST");
 
         String button1 = request.getParameter("button1");
         if (button1 != null) {
             if (button1.equals("prev")) {
-                //response.sendRedirect(request.getContextPath() + '/');
                 request.getRequestDispatcher("/").forward(request, response);
             } else {
                 String service = request.getParameter("service");
@@ -33,7 +33,6 @@ public class FirstServlet extends HttpServlet {
                     session.setAttribute("receipt", receipt);
                     System.out.println(((Receipt) session.getAttribute("receipt")));
                     request.getRequestDispatcher("/secondStep").forward(request, response);
-                    //response.sendRedirect(request.getContextPath() + "/secondStep?service=" + service);
                 }
             }
         }
