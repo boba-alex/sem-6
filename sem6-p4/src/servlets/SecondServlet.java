@@ -30,8 +30,7 @@ public class SecondServlet extends HttpServlet {
                 if (quick != null && quick.length() > 0) {
                     Receipt receipt = (Receipt) session.getAttribute("receipt");
                     receipt.setQuick(quick.equals("yes"));
-                    session.setAttribute("receipt", receipt);
-                    System.out.println(((Receipt) session.getAttribute("receipt")));
+                    System.out.println(session.getAttribute("receipt"));
                     request.getRequestDispatcher("/thirdStep").forward(request, response);
                 }
             }

@@ -30,8 +30,7 @@ public class FirstServlet extends HttpServlet {
                 if (service != null && service.length() > 0) {
                     Receipt receipt = (Receipt) session.getAttribute("receipt");
                     receipt.setService(service);
-                    session.setAttribute("receipt", receipt);
-                    System.out.println(((Receipt) session.getAttribute("receipt")));
+                    System.out.println(session.getAttribute("receipt"));
                     request.getRequestDispatcher("/secondStep").forward(request, response);
                 }
             }

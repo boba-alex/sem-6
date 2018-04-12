@@ -35,8 +35,7 @@ public class ThirdServlet extends HttpServlet {
                     receipt.setName(name);
                     receipt.setSurname(surname);
                     receipt.setStreet(street);
-                    session.setAttribute("receipt", receipt);
-                    System.out.println(((Receipt) session.getAttribute("receipt")));
+                    System.out.println(session.getAttribute("receipt"));
                     request.getRequestDispatcher("/finishStep").forward(request, response);
                 }
             }
