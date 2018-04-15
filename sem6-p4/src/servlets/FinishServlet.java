@@ -33,7 +33,7 @@ public class FinishServlet extends HttpServlet {
                 "  font-color: red;" + "    background-color: antiquewhite;\n" +
                 "    text-align: center;" +
                 "}\n" +
-                "btn1{\n" +
+                ".btn1{\n" +
                 "font-size: 50px;\n" +
                 "color: blue;" +
                 "}\n" +
@@ -51,7 +51,7 @@ public class FinishServlet extends HttpServlet {
         out.println("<br>Surname: " + ((Receipt) session.getAttribute("receipt")).getSurname());
         out.println("<br>Street: " + ((Receipt) session.getAttribute("receipt")).getStreet());
         out.println("<form name=\"finishform\" action=/thirdStep method=\"GET\">\n" +
-                "<br><br><input type=\"submit\" value=\"PREVIOUS\"/>\n" +
+                "<br><br><input class=\"btn1\" type=\"submit\" value=\"PREVIOUS\"/>\n" +
                 "</form>");
         out.println("</body>");
         out.println("</html>");

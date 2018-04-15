@@ -53,7 +53,7 @@ public class ThirdServlet extends HttpServlet {
                 "  font-color: red;" + "    background-color: antiquewhite;\n" +
                 "    text-align: center;" +
                 "}\n" +
-                "btn1{\n" +
+                ".btn1{\n" +
                 "font-size: 50px;\n" +
                 "color: blue;" +
                 "}\n" +
@@ -70,8 +70,8 @@ public class ThirdServlet extends HttpServlet {
                 "Surname<input type=\"text\" name=\"surname\" value=" + (((Receipt) session.getAttribute("receipt")).getSurname() != null ? ((Receipt) session.getAttribute("receipt")).getSurname() : "-") + " />\n" +
                 "Street<input type=\"text\" name=\"street\" value=" + (((Receipt) session.getAttribute("receipt")).getStreet() != null ? ((Receipt) session.getAttribute("receipt")).getStreet() : "-") + " />\n" +
                 "<br><br>" +
-                "<input type=\"submit\" name=\"button3\" value=\"prev\" />\n" +
-                "<input type=\"submit\" name=\"button3\" value=\"next\" />\n" +
+                "<input class=\"btn1\" type=\"submit\" name=\"button3\" value=\"prev\" />\n" +
+                "<input class=\"btn1\" type=\"submit\" name=\"button3\" value=\"next\" />\n" +
                 "</form>");
         out.println("</body>");
         out.println("</html>");

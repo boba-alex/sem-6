@@ -48,7 +48,7 @@ public class SecondServlet extends HttpServlet {
                 "  font-color: red;" + "    background-color: antiquewhite;\n" +
                 "    text-align: center;" +
                 "}\n" +
-                "btn1{\n" +
+                ".btn1{\n" +
                 "font-size: 50px;\n" +
                 "color: blue;" +
                 "}\n" +
@@ -71,8 +71,8 @@ public class SecondServlet extends HttpServlet {
         } else {
             out.println("NO<input type=\"radio\" name=\"quick\" value=\"no\">\n");
         }
-        out.println("<br><br><p>" + "<input type=\"submit\" name=\"button2\" value=\"prev\" />\n" +
-                "<input type=\"submit\" name=\"button2\" value=\"next\" />\n</p>" +
+        out.println("<br><br><p>" + "<input class=\"btn1\" type=\"submit\" name=\"button2\" value=\"prev\" />\n" +
+                "<input class=\"btn1\" type=\"submit\" name=\"button2\" value=\"next\" />\n</p>" +
                 "</form>");
         out.println("</body>");
         out.println("</html>");

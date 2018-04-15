@@ -48,7 +48,7 @@ public class FirstServlet extends HttpServlet {
                 "  font-color: red;" + "    background-color: antiquewhite;\n" +
                 "    text-align: center;" +
                 "}\n" +
-                "btn1{\n" +
+                ".btn1{\n" +
                 "font-size: 50px;\n" +
                 "color: blue;" +
                 "}\n" +

@@ -42,6 +42,7 @@ public class StartServlet extends HttpServlet {
                 "}\n" +
                 ".btn1{\n" +
                 "    font-size: 50px;\n" +
+                "color: blue;" +
                 "} </style>");
 
         out.println("</head>");
