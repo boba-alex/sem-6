@@ -3,4 +3,37 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <jsp-file>/jsp/first.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>SecondServlet</servlet-name>
+        <jsp-file>/jsp/second.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>ThirdServlet</servlet-name>
+        <jsp-file>/jsp/third.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>FinishServlet</servlet-name>
+        <jsp-file>/jsp/finish.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/firstStep</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/secondStep</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThirdServlet</servlet-name>
+        <url-pattern>/thirdStep</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FinishServlet</servlet-name>
+        <url-pattern>/finishStep</url-pattern>
+    </servlet-mapping>
 </web-app>

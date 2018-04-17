@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<taglib xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <tlib-version>1.0</tlib-version>
+    <short-name>MyTags</short-name>
+    <uri>customtags</uri>
+    <tag>
+        <name>mytag</name>
+        <tag-class>tag.MyTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>
