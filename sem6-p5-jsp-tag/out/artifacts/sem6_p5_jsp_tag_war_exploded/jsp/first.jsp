@@ -16,7 +16,7 @@
         } else {
             String service = request.getParameter("service");
             if (service != null && service.length() > 0) {
-                request.getSession().setAttribute("service", service);
+                session.setAttribute("service", service);
                 request.getRequestDispatcher("/secondStep").forward(request, response);
             }
         }

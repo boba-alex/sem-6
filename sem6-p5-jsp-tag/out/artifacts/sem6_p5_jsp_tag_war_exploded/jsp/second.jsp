@@ -15,7 +15,7 @@
         } else {
             String quick = request.getParameter("quick");
             if (quick != null && quick.length() > 0) {
-                request.getSession().setAttribute("quick", quick);
+                session.setAttribute("quick", quick);
                 request.getRequestDispatcher("/thirdStep").forward(request, response);
             }
         }
