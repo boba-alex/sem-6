@@ -23,9 +23,9 @@
             String surname = request.getParameter("surname");
             String street = request.getParameter("street");
 
-            session.setAttribute("name", name);
-            session.setAttribute("surname", surname);
-            session.setAttribute("street", street);
+            request.getSession().setAttribute("name", name);
+            request.getSession().setAttribute("surname", surname);
+            request.getSession().setAttribute("street", street);
 
             Pattern p = Pattern.compile("[a-zA-Z]+");
             Matcher matcher = p.matcher(name);
