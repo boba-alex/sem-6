@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="m" uri="customtags"%>
 <html>
 <head>
     <title>Start page</title>
@@ -27,6 +26,5 @@
 <form name="startform" action="/" method="GET">
     <input class="btn1" type="submit" name="buttonStart" value="START"/>
 </form>
-<m:mytag/>
 </body>
 </html>

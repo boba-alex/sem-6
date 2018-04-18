@@ -8,16 +8,18 @@
   <component name="ChangeListManager">
     <list default="true" id="5cf9d8a9-dbc5-45e7-b9c6-6642aa63fbda" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/FinishServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/FinishServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/FirstServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/FirstServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/SecondServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/SecondServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/StartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/StartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/ThirdServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/ThirdServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/.idea/libraries/Java_EE_6_Java_EE_6__2_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sem6-p5-jsp-tag/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/out/artifacts/sem6_p5_jsp_tag_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sem6-p5-jsp-tag/out/artifacts/sem6_p5_jsp_tag_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/out/artifacts/sem6_p5_jsp_tag_war_exploded/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../sem6-p5-jsp-tag/out/artifacts/sem6_p5_jsp_tag_war_exploded/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/out/artifacts/sem6_p5_jsp_tag_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../sem6-p5-jsp-tag/out/artifacts/sem6_p5_jsp_tag_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/sem6-p5-jsp-tag.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../sem6-p5-jsp-tag/sem6-p5-jsp-tag.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/src/beans/Receipt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/src/servlets/FinishServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/src/servlets/FirstServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/src/servlets/SecondServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/src/servlets/StartServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/src/servlets/ThirdServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sem6-p5-jsp-tag/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../sem6-p5-jsp-tag/web/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sem6-p5-jsp-tag/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../sem6-p5-jsp-tag/web/index.jsp" afterDir="false" />
@@ -35,17 +37,17 @@
       <file leaf-file-name="StartServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/StartServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="280">
               <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FinishServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FinishServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/FinishServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+            <state relative-caret-position="924">
+              <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -62,17 +64,17 @@
       <file leaf-file-name="FirstServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/FirstServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+            <state relative-caret-position="903">
+              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecondServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SecondServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlets/SecondServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="74" column="38" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="38" />
+            <state relative-caret-position="483">
+              <caret line="74" column="38" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -80,7 +82,7 @@
       <file leaf-file-name="ThirdServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/ThirdServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="1323">
               <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
             </state>
           </provider>
@@ -162,7 +164,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1932" />
@@ -174,6 +176,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,9 +218,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -708,50 +710,51 @@
       <workItem from="1523718244816" duration="146000" />
       <workItem from="1523718525228" duration="1457000" />
       <workItem from="1523728068436" duration="742000" />
-      <workItem from="1523790183849" duration="275000" />
+      <workItem from="1523790183849" duration="435000" />
+      <workItem from="1523981908701" duration="18000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41445000" />
+    <option name="totallyTimeSpent" value="41623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1932" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.20480669" side_tool="true" visible="true" weight="0.32896176" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.20480669" side_tool="true" visible="true" weight="0.32896176" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7951933" weight="0.32896176" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7951933" visible="true" weight="0.32896176" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.81433225" visible="true" weight="0.25182864" />
-      <window_info id="Web" order="2" sideWeight="0.18566775" side_tool="true" visible="true" weight="0.25182864" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8127036" visible="true" weight="0.25182864" />
+      <window_info id="Web" order="2" sideWeight="0.18729642" side_tool="true" visible="true" weight="0.25182864" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
       <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -989,6 +992,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/FinishServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1003,38 +1013,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/StartServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/FirstServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/SecondServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="74" column="38" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="38" />
+        <state relative-caret-position="903">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/ThirdServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="1323">
           <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/FinishServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlets/StartServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state relative-caret-position="280">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/SecondServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="74" column="38" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="38" />
         </state>
       </provider>
     </entry>

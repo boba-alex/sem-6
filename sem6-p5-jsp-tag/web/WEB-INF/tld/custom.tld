@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<taglib xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://java.sun.com/xml/ns/javaee"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
-        version="2.1">
+<taglib>
     <tlib-version>1.0</tlib-version>
-    <short-name>MyTags</short-name>
+    <jsp-version>2.0</jsp-version>
+    <short-name>My Tags with body</short-name>
     <uri>customtags</uri>
     <tag>
-        <name>mytag</name>
-        <tag-class>tag.MyTag</tag-class>
-        <body-content>empty</body-content>
+        <name>my-customer-info-tag</name>
+        <tag-class>tag.MyCustomerInformationTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>surname</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
     </tag>
 </taglib>
