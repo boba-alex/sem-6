@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="my" uri="customtags" %>
-<%--<%@page errorPage="/jsp/error.jsp" %>--%>
+<%@page errorPage="/jsp/error.jsp" %>
 
 <html>
 <head>
