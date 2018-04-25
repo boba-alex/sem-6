@@ -15,7 +15,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
-import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
+
 import main.entities.Receipt;
 import main.entities.ReceiptCustomer;
 import main.entities.ReceiptService;
@@ -802,7 +802,7 @@ public class MainFrame7 extends javax.swing.JFrame {
     }
     
     private void fillComboBoxCustomer(){
-        ArrayList<ReceiptCustomer> receiptCustomers = (ArrayList<ReceiptCustomer>)new MyService().getReceiptCurstomers();
+        ArrayList<ReceiptCustomer> receiptCustomers = (ArrayList<ReceiptCustomer>)new MyService().getReceiptCustomers();
             for(ReceiptCustomer receiptCustomer : receiptCustomers){
                 jComboBox3.addItem(receiptCustomer);
             }

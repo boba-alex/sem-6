@@ -19,4 +19,8 @@ public class ConstantsSQL {
     public static final String SQL_QUERY_GET_RECEIPT_CUSTOMERS = "select * from receipt_customer";
     public static final String SQL_QUERY_GET_RECEIPT_SERVICES = "select * from receipt_service";
 
+    public static final String SQL_QUERY_GET_RECEIPT_SERVICE_BY_ID = "select * from receipt_service where id = ?";
+    public static final String SQL_QUERY_GET_RECEIPT_CUSTOMER_BY_ID = "select * from receipt_customer where id = ?";
+    public static final String SQL_QUERY_GET_RECEIPT_BY_ID = "select * from receipt where id = ?";
+
 }

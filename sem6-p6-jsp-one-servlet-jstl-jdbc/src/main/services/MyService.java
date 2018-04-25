@@ -58,7 +58,7 @@ public class MyService {
         receiptCustomerDAO.addReceiptCustomer(receiptCustomer);
     }
  
-    public List<ReceiptCustomer> getReceiptCurstomers(){
+    public List<ReceiptCustomer> getReceiptCustomers(){
         return receiptCustomerDAO.getReceiptCurstomers();
     }
     public List<ReceiptService> getReceiptServices(){

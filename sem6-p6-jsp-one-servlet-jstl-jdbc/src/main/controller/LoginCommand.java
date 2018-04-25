@@ -1,4 +1,4 @@
-package controller;
+package main.controller;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +16,7 @@ public class LoginCommand implements Command {
         String login = request.getParameter(PARAM_NAME_LOGIN);
         String pass = request.getParameter(PARAM_NAME_PASSWORD);
 
-        if(LoginLogic.checkLogin(login, pass)){
+        if(CheckLogic.checkLogin(login, pass)){
             request.setAttribute("user", login);
             page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.MAIN_PAGE_PATH);
         }

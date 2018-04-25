@@ -84,6 +84,11 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
         return receiptCustomers;
     }
 
+    @Override
+    public ReceiptCustomer getReceiptCustomerById(int id) {
+        return null;
+    }
+
     private List<ReceiptCustomer> initReceiptCustomers(ResultSet resultSet) throws SQLException {
         List<ReceiptCustomer> receiptCustomers = new ArrayList<ReceiptCustomer>();
         while (resultSet.next()) {

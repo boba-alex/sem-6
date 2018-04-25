@@ -1,4 +1,4 @@
-package controller;
+package main.controller;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -39,7 +39,8 @@ public class Controller extends javax.servlet.http.HttpServlet {
             request.setAttribute("errorMessage", MessageManager.getInstance().getProperty(MessageManager.IO_EXCEPTION_ERROR_MESSAGE));
             page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.ERROR_PAGE_PATH);
         }
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
-        dispatcher.forward(request, response);
+        request.getRequestDispatcher(page).forward(request, response);
+        //RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
+        //dispatcher.forward(request, response);
     }
 }

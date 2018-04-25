@@ -51,6 +51,11 @@ public class ReceiptServiceDAOImpl implements ReceiptServiceDAO{
         return receiptServices;
     }
 
+    @Override
+    public ReceiptService getReceiptServiceById(int id) {
+        return null;
+    }
+
     private List<ReceiptService> initReceiptServices(ResultSet resultSet) throws SQLException {
         List<ReceiptService> receiptServices = new ArrayList<ReceiptService>();
         while (resultSet.next()) {

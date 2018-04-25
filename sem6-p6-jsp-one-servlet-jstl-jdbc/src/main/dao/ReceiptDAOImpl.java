@@ -153,6 +153,11 @@ public class ReceiptDAOImpl implements ReceiptDAO {
             }
         }
     }
+
+    @Override
+    public Receipt getReceiptById(int id) {
+        return null;
+    }
 }
 
 

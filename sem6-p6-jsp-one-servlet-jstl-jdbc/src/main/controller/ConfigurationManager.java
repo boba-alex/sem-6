@@ -1,7 +1,4 @@
-package controller;
-
-import java.util.ResourceBundle;
-import java.util.logging.LogManager;
+package main.controller;
 
 public class ConfigurationManager {
     private static ConfigurationManager instance;
@@ -15,6 +12,8 @@ public class ConfigurationManager {
     public static final String ERROR_PAGE_PATH = "/jsp/error.jsp";
     public static final String MAIN_PAGE_PATH = "/jsp/main.jsp";
     public static final String LOGIN_PAGE_PATH = "/jsp/login.jsp";
+    public static final String ADD_RECEIPT_CUSTOMER_PAGE_PATH = "/jsp/add-receipt-customer.jsp";
+    public static final String ADD_RECEIPT_PAGE_PATH = "/jsp/add-receipt.jsp";
 
     public static ConfigurationManager getInstance() {
         if(instance == null){

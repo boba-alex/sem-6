@@ -1,0 +1,59 @@
+body {
+    text-color: white;
+    font-color: green;
+    text-size: 30;
+    font-size: 35px;
+    color: white;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+}
+
+.btn1 {
+    font-size: 50px;
+    color: blue;
+}
+
+.styled-select select {
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    color: white;
+}
+
+.my-option {
+    color: white;
+    background: #61122f;
+}
+
+/* HEADER */
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}

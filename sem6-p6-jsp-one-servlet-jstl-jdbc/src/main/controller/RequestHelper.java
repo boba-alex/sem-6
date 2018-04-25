@@ -1,4 +1,4 @@
-package controller;
+package main.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -11,6 +11,8 @@ public class RequestHelper {
 
     private RequestHelper(){
         commands.put("login", new LoginCommand());
+        commands.put("add-receipt-customer", new AddReceiptCustomerCommand());
+        commands.put("add-receipt", new AddReceiptCommand());
     }
 
     public Command getCommand(HttpServletRequest request) {

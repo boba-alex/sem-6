@@ -7,7 +7,7 @@
     <servlet>
         <display-name>Controller</display-name>
         <servlet-name>Controller</servlet-name>
-        <servlet-class>controller.Controller</servlet-class>
+        <servlet-class>main.controller.Controller</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Controller</servlet-name>
