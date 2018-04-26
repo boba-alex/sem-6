@@ -39,8 +39,9 @@ public class Controller extends javax.servlet.http.HttpServlet {
             request.setAttribute("errorMessage", MessageManager.getInstance().getProperty(MessageManager.IO_EXCEPTION_ERROR_MESSAGE));
             page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.ERROR_PAGE_PATH);
         }
-        request.getRequestDispatcher(page).forward(request, response);
+        //request.getRequestDispatcher(page).forward(request, response);
         //RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
         //dispatcher.forward(request, response);
+        response.sendRedirect(page);
     }
 }

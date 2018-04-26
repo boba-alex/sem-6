@@ -156,7 +156,40 @@ public class ReceiptDAOImpl implements ReceiptDAO {
 
     @Override
     public Receipt getReceiptById(int id) {
-        return null;
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        List<Receipt> receipts = null;
+        try {
+            Class.forName(ConstantsSQL.DRIVER);
+            connection = DriverManager.getConnection(ConstantsSQL.URL_DATABASE, ConstantsSQL.LOGIN, ConstantsSQL.PASSWORD);
+            preparedStatement = connection.prepareStatement(ConstantsSQL.SQL_QUERY_GET_RECEIPT_BY_ID);
+            preparedStatement.setString(1, String.valueOf(id));
+            resultSet = preparedStatement.executeQuery();
+            receipts = initReceipts(resultSet);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "SQL exception occurred during add client");
+            ex.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            System.out.println("Class driver not found");
+            ex.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+                if (preparedStatement != null) {
+                    preparedStatement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                System.out.println("SQL exception occurred during add client");
+                e.printStackTrace();
+            }
+        }
+        return receipts.get(0);
     }
 }
 

@@ -84,11 +84,6 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
         return receiptCustomers;
     }
 
-    @Override
-    public ReceiptCustomer getReceiptCustomerById(int id) {
-        return null;
-    }
-
     private List<ReceiptCustomer> initReceiptCustomers(ResultSet resultSet) throws SQLException {
         List<ReceiptCustomer> receiptCustomers = new ArrayList<ReceiptCustomer>();
         while (resultSet.next()) {
@@ -101,5 +96,43 @@ public class ReceiptCustomerDAOImpl implements ReceiptCustomerDAO {
             receiptCustomers.add(receiptCustomer);
         }
         return receiptCustomers;
+    }
+
+    @Override
+    public ReceiptCustomer getReceiptCustomerById(int id) {
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        List<ReceiptCustomer> receiptCustomers = null;
+        try {
+            Class.forName(ConstantsSQL.DRIVER);
+            connection = DriverManager.getConnection(ConstantsSQL.URL_DATABASE, ConstantsSQL.LOGIN, ConstantsSQL.PASSWORD);
+            preparedStatement = connection.prepareStatement(ConstantsSQL.SQL_QUERY_GET_RECEIPT_CUSTOMER_BY_ID);
+            preparedStatement.setString(1, String.valueOf(id));
+            resultSet = preparedStatement.executeQuery();
+            receiptCustomers = initReceiptCustomers(resultSet);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "SQL exception occurred during add client");
+            ex.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            System.out.println("Class driver not found");
+            ex.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+                if (preparedStatement != null) {
+                    preparedStatement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                System.out.println("SQL exception occurred during add client");
+                e.printStackTrace();
+            }
+        }
+        return receiptCustomers.get(0);
     }
 }

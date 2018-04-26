@@ -50,19 +50,32 @@ public class MyService {
         return receiptDAO.getReceipts(ConstantsSQL.SQL_QUERY_GET_RECEIPTS_IN_CURRENT_CUARTER);
     }
 
-    public void deleteReceipt(Receipt receipt){
+    public void deleteReceipt(Receipt receipt) {
         receiptDAO.deleteReceipt(receipt);
     }
 
-    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer){
+    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer) {
         receiptCustomerDAO.addReceiptCustomer(receiptCustomer);
     }
- 
-    public List<ReceiptCustomer> getReceiptCustomers(){
+
+    public List<ReceiptCustomer> getReceiptCustomers() {
         return receiptCustomerDAO.getReceiptCurstomers();
     }
-    public List<ReceiptService> getReceiptServices(){
+
+    public List<ReceiptService> getReceiptServices() {
         return receiptServiceDAO.getReceiptServices();
+    }
+
+    public Receipt getReceiptById(int id) {
+        return receiptDAO.getReceiptById(id);
+    }
+
+    public ReceiptCustomer getReceiptCustomerById(int id) {
+        return receiptCustomerDAO.getReceiptCustomerById(id);
+    }
+
+    public ReceiptService getReceiptServiceById(int id){
+        return receiptServiceDAO.getReceiptServiceById(id);
     }
 
 }
