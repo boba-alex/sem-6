@@ -1,6 +1,7 @@
 package main.controller;
 
-import javax.servlet.RequestDispatcher;
+import main.controller.commands.Command;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,7 +18,6 @@ public class Controller extends javax.servlet.http.HttpServlet {
         processRequest(request, response);
     }
 
-
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         processRequest(request, response);
     }
@@ -26,7 +26,6 @@ public class Controller extends javax.servlet.http.HttpServlet {
         String page = null;
         try {
             Command command = requestHelper.getCommand(request);
-
             page = command.execute(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
@@ -39,9 +38,7 @@ public class Controller extends javax.servlet.http.HttpServlet {
             request.setAttribute("errorMessage", MessageManager.getInstance().getProperty(MessageManager.IO_EXCEPTION_ERROR_MESSAGE));
             page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.ERROR_PAGE_PATH);
         }
-        //request.getRequestDispatcher(page).forward(request, response);
-        //RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
-        //dispatcher.forward(request, response);
-        response.sendRedirect(page);
+        //getServletContext().getRequestDispatcher(page).forward(request, response);
+        response.sendRedirect(page); //no params is better when u update the page
     }
 }

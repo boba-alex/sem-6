@@ -10,7 +10,6 @@ package main.entities;
 import java.time.LocalDate;
 
 /**
- *
  * @author User
  */
 public class Receipt {
@@ -19,11 +18,12 @@ public class Receipt {
     private ReceiptCustomer receiptCustomer;
     private LocalDate date;
 
-    public Receipt(){}
-    
-    public Receipt(ReceiptService receiptService, ReceiptCustomer receiptCustomer, LocalDate date){
+    public Receipt() {
+    }
+
+    public Receipt(ReceiptService receiptService, ReceiptCustomer receiptCustomer, LocalDate date) {
         this.receiptService = receiptService;
-        this.receiptCustomer=receiptCustomer;
+        this.receiptCustomer = receiptCustomer;
         this.date = date;
     }
 
@@ -59,11 +59,11 @@ public class Receipt {
         this.date = date;
     }
 
-    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer){
+    public void addReceiptCustomer(final ReceiptCustomer receiptCustomer) {
         this.receiptCustomer = receiptCustomer;
     }
 
-    public void addReceiptService(final ReceiptService receiptService){
+    public void addReceiptService(final ReceiptService receiptService) {
         this.receiptService = receiptService;
     }
 

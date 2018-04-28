@@ -1,5 +1,8 @@
-package main.controller;
+package main.controller.commands;
 
+import main.controller.CheckLogic;
+import main.controller.ConfigurationManager;
+import main.controller.MessageManager;
 import main.entities.ReceiptCustomer;
 import main.services.MyService;
 
@@ -8,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AddReceiptCustomerCommand implements Command{
+public class AddReceiptCustomerCommand implements Command {
 
     private static final String PARAM_NAME_NAME = "name";
     private static final String PARAM_NAME_SURNAME = "surname";

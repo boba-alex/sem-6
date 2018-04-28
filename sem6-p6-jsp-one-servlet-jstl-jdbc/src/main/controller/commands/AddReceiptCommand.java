@@ -1,5 +1,6 @@
-package main.controller;
+package main.controller.commands;
 
+import main.controller.ConfigurationManager;
 import main.entities.Receipt;
 import main.entities.ReceiptCustomer;
 import main.entities.ReceiptService;

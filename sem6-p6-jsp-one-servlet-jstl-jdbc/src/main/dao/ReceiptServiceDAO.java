@@ -9,5 +9,6 @@ import java.util.List;
  */
 public interface ReceiptServiceDAO {
     List<ReceiptService> getReceiptServices();
+
     ReceiptService getReceiptServiceById(int id);
 }

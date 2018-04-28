@@ -1,5 +1,7 @@
 package main.controller;
 
+import main.controller.commands.*;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 
@@ -9,24 +11,26 @@ public class RequestHelper {
 
     HashMap<String, Command> commands = new HashMap<>();
 
-    private RequestHelper(){
-        commands.put("login", new LoginCommand());
+    private RequestHelper() {
         commands.put("add-receipt-customer", new AddReceiptCustomerCommand());
         commands.put("add-receipt", new AddReceiptCommand());
+        commands.put("delete-receipt", new DeleteReceiptCommand());
+        commands.put("analyze-receipts", new AnalyzeReceiptsCommand());
     }
 
     public Command getCommand(HttpServletRequest request) {
         String action = request.getParameter("command");
 
         Command command = commands.get(action);
-        if(command == null){
+        if (command == null) {
             command = new NoCommand();
         }
         return command;
     }
+
     //Singleton
     public static RequestHelper getInstance() {
-        if(instance == null){
+        if (instance == null) {
             instance = new RequestHelper();
         }
         return instance;

@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by User on 20.02.2018.
  */
-public class ReceiptServiceDAOImpl implements ReceiptServiceDAO{
+public class ReceiptServiceDAOImpl implements ReceiptServiceDAO {
 
     @Override
     public List<ReceiptService> getReceiptServices() {

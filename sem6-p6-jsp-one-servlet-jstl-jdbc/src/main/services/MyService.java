@@ -74,7 +74,7 @@ public class MyService {
         return receiptCustomerDAO.getReceiptCustomerById(id);
     }
 
-    public ReceiptService getReceiptServiceById(int id){
+    public ReceiptService getReceiptServiceById(int id) {
         return receiptServiceDAO.getReceiptServiceById(id);
     }
 

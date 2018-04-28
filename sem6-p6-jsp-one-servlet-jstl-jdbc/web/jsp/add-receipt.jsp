@@ -40,11 +40,19 @@
 <br>
 <table>
     <c:forEach var="eachReceipt" items="${myService.allReceipts}">
+        <c:url var="deleteLink" value="${pageContext.request.contextPath}/controller">
+            <c:param name="receipt-id" value="${eachReceipt.id}"/>
+            <c:param name="command" value="delete-receipt"/>
+        </c:url>
         <tr>
             <td>${eachReceipt.receiptService.name}</td>
             <td>${eachReceipt.date}</td>
             <td>${eachReceipt.receiptCustomer.name}</td>
             <td>${eachReceipt.receiptCustomer.surname}</td>
+            <td><a href="${deleteLink}"
+                   onclick="if (!(confirm('Are u sure u want to delete this receipt?'))) return false">Delete
+            </a>
+            </td>
         </tr>
     </c:forEach>
 </table>
