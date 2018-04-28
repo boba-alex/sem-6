@@ -5,4 +5,3 @@
     <a href="/jsp/add-receipt.jsp">Add/Delete receipt</a>
     <a href="/jsp/analyze-receipts.jsp">Analyze receipts</a>
 </div>
-</a>

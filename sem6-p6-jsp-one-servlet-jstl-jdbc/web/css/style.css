@@ -57,3 +57,46 @@ body {
     background-color: #4CAF50;
     color: white;
 }
+
+tr.tr1 {
+
+    bgcolor: aqua;
+    color: black;
+}
+
+tr.tr-h {
+    color: blue;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    background: yellow;
+    border-collapse: collapse;
+}
+
+body {
+    background-image: url("../pictures/pic1.png");
+}
+
+div.pic111 {
+    margin: 10% 0% 10% 0%;
+    alignment: center;
+    height: auto;
+}
+
+.footer {
+    background: brown;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+}

@@ -22,9 +22,12 @@ public class AnalyzeReceiptsCommand implements Command {
         String current_period = request.getParameter(PARAM_NAME_CURRENT_PERIOD);
 
         MyService myService = new MyService();
-        List<Receipt> chosenReceipts = new ArrayList<>();
+        List<Receipt> chosenReceipts;
 
-        if (current_period.equals("day")) {
+        if (current_period.equals("-")) {
+            chosenReceipts = myService.getAllReceipts();
+            request.getSession().setAttribute("chosenReceipts", chosenReceipts);
+        } else if (current_period.equals("day")) {
             chosenReceipts = myService.getReceiptsInCurrentDay();
             request.getSession().setAttribute("chosenReceipts", chosenReceipts);
         } else if (current_period.equals("month")) {
@@ -33,18 +36,9 @@ public class AnalyzeReceiptsCommand implements Command {
         } else if (current_period.equals("quarter")) {
             chosenReceipts = myService.getReceiptsInCurrentQuarter();
             request.getSession().setAttribute("chosenReceipts", chosenReceipts);
-        } else {
-            chosenReceipts = myService.getAllReceipts();
-            request.getSession().setAttribute("chosenReceipts", chosenReceipts);
         }
 
-        //request.getPa
-
         page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.ANALYZE_RECEIPTS_PAGE_PATH);
-//        else{
-//            request.setAttribute("errorMessage", MessageManager.getInstance().getProperty(MessageManager.ADD_RECEIPT_CUSTOMER_ERROR_MESSAGE));
-//            page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.ERROR_PAGE_PATH);
-//        }
         return page;
     }
 }

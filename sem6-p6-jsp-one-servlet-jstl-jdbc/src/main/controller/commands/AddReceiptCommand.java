@@ -34,13 +34,7 @@ public class AddReceiptCommand implements Command {
         receipt.setDate(LocalDate.now());
         myService.addReceipt(receipt);
 
-        //request.getPa
-
         page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.ADD_RECEIPT_PAGE_PATH);
-//        else{
-//            request.setAttribute("errorMessage", MessageManager.getInstance().getProperty(MessageManager.ADD_RECEIPT_CUSTOMER_ERROR_MESSAGE));
-//            page = ConfigurationManager.getInstance().getProperty(ConfigurationManager.ERROR_PAGE_PATH);
-//        }
         return page;
     }
 }

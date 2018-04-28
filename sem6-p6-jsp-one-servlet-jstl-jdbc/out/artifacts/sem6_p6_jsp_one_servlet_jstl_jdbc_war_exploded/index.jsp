@@ -6,5 +6,13 @@
 </head>
 <body>
 <jsp:include page="/jsp/header.jsp"/>
+
+<div class="content">
+    <div class="pic111">
+        <img src="http://swimmaster.by/assets/theme-arox/images/slide-contacts.jpg">
+    </div>
+</div>
+
+<jsp:include page="/jsp/footer.jsp"/>
 </body>
 </html>
